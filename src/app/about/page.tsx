@@ -26,10 +26,8 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <div className="mt-20 border-t"></div>
-
         {/* STORY */}
-        <section className="mt-32 max-w-3xl">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16 max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-bold">Our Story</h2>
           <p className="mt-6 text-zinc-600">
             Vila Cleaners & Alterations was built on years of hands-on experience and a simple belief:
@@ -42,16 +40,14 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <div className="mt-20 border-t"></div>
-
         {/* VALUES */}
-        <section className="mt-32">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-bold">What We Value</h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
             {["Personal Service", "Attention to Detail", "Honest Pricing", "Respect for Every Garment"].map((value) => (
               <div
                 key={value}
-                className="rounded-2xl border bg-stone-50 p-6 transition-colors duration-150 hover:bg-stone-100"
+                className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5"
               >
                 <div className="font-semibold">{value}</div>
                 <p className="mt-2 text-sm text-zinc-500">
@@ -62,11 +58,9 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <div className="mt-20 border-t"></div>
-
         {/* CTA */}
-        <section className="mt-32 mb-32">
-          <div className="rounded-3xl border bg-stone-100 p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <section className="mt-32 mb-32 bg-stone-100 rounded-3xl px-6 py-16">
+          <div className="rounded-3xl bg-white p-10 shadow-sm ring-1 ring-black/5 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-semibold">We look forward to serving you</h3>
               <p className="mt-2 text-zinc-600">

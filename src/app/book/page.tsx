@@ -18,11 +18,10 @@ export default function BookPage() {
           </p>
         </section>
 
-        <div className="mt-20 border-t"></div>
 
         {/* BOOKING FORM */}
-        <section className="mt-32">
-          <div className="max-w-3xl rounded-2xl border bg-white p-8 shadow-sm">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
+          <div className="max-w-3xl rounded-2xl bg-white p-8 shadow-sm ring-1 ring-black/5">
             <form className="grid gap-6 sm:grid-cols-2">
               <div>
                 <label className="block text-sm font-medium text-zinc-700">Name</label>
@@ -83,10 +82,9 @@ export default function BookPage() {
           </div>
         </section>
 
-        <div className="mt-20 border-t"></div>
 
         {/* WHAT TO EXPECT */}
-        <section className="mt-32 mb-32">
+        <section className="mt-32 mb-32 bg-stone-100 rounded-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-bold">What to Expect</h2>
           <ul className="mt-6 space-y-3 text-zinc-600 max-w-3xl list-disc pl-5">
             <li>Please bring the garment you would like altered to your appointment.</li>

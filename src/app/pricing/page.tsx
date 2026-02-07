@@ -1,5 +1,3 @@
-
-
 import Container from "../../components/Container";
 import Button from "../../components/Button";
 
@@ -21,7 +19,7 @@ export default function PricingPage() {
         <div className="mt-20 border-t"></div>
 
         {/* PRICING CARDS */}
-        <section className="mt-32">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-bold">General Pricing</h2>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
@@ -31,7 +29,7 @@ export default function PricingPage() {
               { label: "Suit Tailoring", price: "from $XX" },
               { label: "Zipper Repair", price: "from $XX" },
             ].map((item) => (
-              <div key={item.label} className="rounded-2xl border bg-white p-6 shadow-sm">
+              <div key={item.label} className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
                 <div className="text-sm text-zinc-500">{item.label}</div>
                 <div className="mt-2 text-xl font-semibold">{item.price}</div>
               </div>
@@ -52,11 +50,8 @@ export default function PricingPage() {
           </ul>
         </section>
 
-        <div className="mt-20 border-t"></div>
-
-        {/* CTA */}
-        <section className="mt-32 mb-32">
-          <div className="rounded-3xl border bg-zinc-50 p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <section className="mt-32 mb-32 bg-stone-100 rounded-3xl px-6 py-16">
+          <div className="rounded-3xl bg-white p-10 shadow-sm ring-1 ring-black/5 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-semibold">Need an exact quote?</h3>
               <p className="mt-2 text-zinc-600">

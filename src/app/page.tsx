@@ -44,7 +44,7 @@ export default function HomePage() {
         </section>
 
         {/* HOW IT WORKS */}
-        <section className="mt-32">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-bold">
             What to Expect
           </h2>
@@ -70,7 +70,7 @@ export default function HomePage() {
             ].map((item) => (
               <div
                 key={item.step}
-                className="rounded-2xl border bg-stone-50 p-6 transition-colors duration-150 hover:bg-stone-100"
+                className="rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 transition-colors duration-150 hover:bg-stone-100"
               >
                 <div className="text-sm font-semibold text-zinc-500">Step</div>
                 <h3 className="mt-2 text-lg font-semibold">{item.step}</h3>
@@ -81,7 +81,7 @@ export default function HomePage() {
         </section>
 
         {/* ALTERATIONS SERVICES */}
-        <section className="mt-32">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-bold">
             Alterations Services
           </h2>
@@ -102,7 +102,7 @@ export default function HomePage() {
             ].map((service) => (
               <div
                 key={service.name}
-                className="relative rounded-2xl border bg-stone-50 p-6 transition-colors duration-150 hover:bg-stone-100"
+                className="relative rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 transition-colors duration-150 hover:bg-stone-100"
               >
                 <div className="mb-3 h-1 w-10 rounded-full bg-[var(--accent-sage)]/80"></div>
                 <h3 className="font-semibold text-lg">
@@ -152,7 +152,7 @@ export default function HomePage() {
         </section>
 
         {/* PRICING GUIDE */}
-        <section className="mt-32">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-bold">General Pricing Guide</h2>
 
           <p className="mt-3 text-zinc-600 max-w-3xl">
@@ -166,7 +166,7 @@ export default function HomePage() {
               { label: "Suit Tailoring", price: "from $XX" },
               { label: "Zipper Repair", price: "from $XX" },
             ].map((item) => (
-              <div key={item.label} className="rounded-2xl border bg-stone-50 p-6">
+              <div key={item.label} className="rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6">
                 <div className="text-sm text-zinc-500">{item.label}</div>
                 <div className="mt-2 text-xl font-semibold">{item.price}</div>
               </div>
@@ -184,7 +184,7 @@ export default function HomePage() {
             Request an appointment for alterations or tailoring. Final details and pricing will be confirmed in-store.
           </p>
 
-          <div className="mt-10 max-w-3xl rounded-2xl border bg-stone-50 p-8">
+          <div className="mt-10 max-w-3xl rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-8">
             <form className="grid gap-6 sm:grid-cols-2">
               <div className="sm:col-span-1">
                 <label className="block text-sm font-medium text-zinc-700">Name</label>
@@ -269,7 +269,7 @@ export default function HomePage() {
         <div className="mt-20 border-t"></div>
 
         {/* GOOGLE REVIEWS */}
-        <section className="mt-32">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-bold">What Our Customers Say</h2>
 
           <p className="mt-3 text-zinc-600 max-w-3xl">
@@ -291,7 +291,7 @@ export default function HomePage() {
                 name: "Emily T."
               }
             ].map((review, idx) => (
-              <div key={idx} className="rounded-2xl border bg-stone-50 p-6">
+            <div key={idx} className="rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6">
                 <div className="text-yellow-500 text-sm">★★★★★</div>
                 <p className="mt-3 text-zinc-700">“{review.quote}”</p>
                 <div className="mt-4 text-sm text-zinc-500">— {review.name}, Google Review</div>
@@ -303,7 +303,7 @@ export default function HomePage() {
         <div className="mt-20 border-t"></div>
 
         {/* DRY CLEANING PREVIEW */}
-        <section className="mt-32">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-bold">Dry Cleaning</h2>
 
           <p className="mt-3 text-zinc-600 max-w-3xl">
@@ -312,7 +312,7 @@ export default function HomePage() {
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
             {["Suits & Blazers", "Dresses", "Coats & Jackets", "Specialty Items"].map((item) => (
-              <div key={item} className="relative rounded-2xl border bg-stone-50 p-6 transition-colors duration-150 hover:bg-stone-100">
+              <div key={item} className="relative rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 transition-colors duration-150 hover:bg-stone-100">
                 <div className="mb-3 h-1 w-10 rounded-full bg-[var(--accent-sage)]/80"></div>
                 <div className="font-semibold">{item}</div>
                 <div className="mt-2 text-sm text-zinc-500">Pricing varies</div>

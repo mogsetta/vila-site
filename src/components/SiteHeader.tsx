@@ -8,7 +8,7 @@ export default function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="border-b">
+    <header className="sticky top-0 z-40 border-b bg-white">
       <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
         <Link href="/" className="text-lg font-semibold hover:text-zinc-900">
           Vila Cleaners & Alterations

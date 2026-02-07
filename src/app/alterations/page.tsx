@@ -1,5 +1,3 @@
-
-
 import Container from "../../components/Container";
 import Button from "../../components/Button";
 
@@ -32,7 +30,7 @@ export default function AlterationsPage() {
         <div className="mt-20 border-t"></div>
 
         {/* SERVICES LIST */}
-        <section className="mt-32">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-bold">Our Alteration Services</h2>
           <p className="mt-3 text-zinc-600 max-w-3xl">
             From simple hemming to complex wedding dress alterations, we handle each garment with care
@@ -50,7 +48,7 @@ export default function AlterationsPage() {
             ].map((service) => (
               <div
                 key={service.name}
-                className="rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition"
+                className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5"
               >
                 <h3 className="font-semibold text-lg">{service.name}</h3>
                 <p className="mt-2 text-sm text-zinc-500">{service.price}</p>
@@ -73,7 +71,7 @@ export default function AlterationsPage() {
         <div className="mt-20 border-t"></div>
 
         {/* REVIEW SNIPPET */}
-        <section className="mt-32">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-bold">Trusted by Our Customers</h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
             {[ 
@@ -81,7 +79,7 @@ export default function AlterationsPage() {
               { quote: "My suit fits better than when I bought it.", name: "James R." },
               { quote: "Fast, professional, and very friendly.", name: "Emily T." },
             ].map((review, idx) => (
-              <div key={idx} className="rounded-2xl border bg-white p-6 shadow-sm">
+              <div key={idx} className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
                 <div className="text-yellow-500 text-sm">★★★★★</div>
                 <p className="mt-3 text-zinc-700">“{review.quote}”</p>
                 <div className="mt-4 text-sm text-zinc-500">— {review.name}, Google Review</div>
@@ -93,8 +91,8 @@ export default function AlterationsPage() {
         <div className="mt-20 border-t"></div>
 
         {/* CTA */}
-        <section className="mt-32 mb-32">
-          <div className="rounded-3xl border bg-zinc-50 p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <section className="mt-32 mb-32 bg-stone-100 rounded-3xl px-6 py-16">
+          <div className="rounded-3xl bg-white p-10 shadow-sm ring-1 ring-black/5 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-semibold">Ready to get the perfect fit?</h3>
               <p className="mt-2 text-zinc-600">

@@ -24,7 +24,7 @@ export default function DryCleaningPage() {
           </div>
 
           {/* IMAGE PLACEHOLDER */}
-          <div className="h-64 md:h-80 rounded-2xl border bg-zinc-50 flex items-center justify-center text-zinc-400">
+          <div className="h-64 md:h-80 rounded-2xl bg-white shadow-sm ring-1 ring-black/5 flex items-center justify-center text-zinc-400">
             Dry Cleaning Image
           </div>
         </section>
@@ -32,7 +32,7 @@ export default function DryCleaningPage() {
         <div className="mt-20 border-t"></div>
 
         {/* WHAT WE CLEAN */}
-        <section className="mt-32">
+        <section className="mt-32 bg-stone-100 rounded-3xl px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-bold">What We Clean</h2>
           <p className="mt-3 text-zinc-600 max-w-3xl">
             We clean a wide range of garments and fabrics with care and attention to detail.
@@ -40,7 +40,7 @@ export default function DryCleaningPage() {
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
             {["Suits & Blazers", "Dresses", "Coats & Jackets", "Shirts & Pants", "Formal Wear", "Specialty Items"].map((item) => (
-              <div key={item} className="rounded-2xl border bg-white p-6 shadow-sm">
+              <div key={item} className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
                 <div className="font-semibold">{item}</div>
                 <div className="mt-2 text-sm text-zinc-500">Professional care</div>
               </div>
@@ -63,8 +63,8 @@ export default function DryCleaningPage() {
         <div className="mt-20 border-t"></div>
 
         {/* CTA */}
-        <section className="mt-32 mb-32">
-          <div className="rounded-3xl border bg-zinc-50 p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <section className="mt-32 mb-32 bg-stone-100 rounded-3xl px-6 py-16">
+          <div className="rounded-3xl bg-white p-10 shadow-sm ring-1 ring-black/5 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-semibold">Questions about dry cleaning?</h3>
               <p className="mt-2 text-zinc-600">
