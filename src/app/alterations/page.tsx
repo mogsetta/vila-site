@@ -1,187 +1,337 @@
-import Container from "../../components/Container";
+// UPGRADED DARK FULL-BLEED EMERALD HERO VERSION
+
+export const metadata = {
+  title: "Alterations in Smyrna TN | Wedding Dress & Suit Tailoring | Vila Cleaners",
+  description:
+    "Professional clothing alterations in Smyrna, TN. Wedding dress alterations, suit tailoring, hemming, resizing, and formal wear adjustments. 30+ years of experience.",
+  keywords: [
+    "alterations Smyrna TN",
+    "wedding dress alterations Smyrna",
+    "suit tailoring Smyrna",
+    "hemming near me",
+    "formal wear alterations",
+  ],
+  openGraph: {
+    title: "Wedding Dress & Suit Alterations in Smyrna TN | Vila Cleaners",
+    description:
+      "Expert bridal gown alterations, suit tailoring, hemming, and formal wear adjustments in Smyrna, Tennessee. 30+ years of master tailoring experience.",
+    url: "https://vilacleaners.com/alterations",
+    siteName: "Vila Cleaners & Alterations",
+    locale: "en_US",
+    type: "website",
+  },
+};
+
 import Button from "../../components/Button";
 import Link from "next/link";
 
 export default function AlterationsPage() {
   return (
     <main>
-      <Container>
-        {/* PAGE HERO */}
-        <section className="mt-24 grid gap-12 md:grid-cols-2 items-center">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Alterations & Tailoring
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Vila Cleaners & Alterations",
+            image: "https://vilacleaners.com/images/alterations.jpg",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Smyrna",
+              addressRegion: "TN",
+              addressCountry: "US",
+            },
+            telephone: "+16154625145",
+            areaServed: "Smyrna TN",
+            makesOffer: {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Clothing Alterations",
+              },
+            },
+          }),
+        }}
+      />
+
+      {/* HERO - EDITORIAL ASYMMETRICAL */}
+      <section className="relative -mx-6 md:-mx-10 overflow-hidden">
+
+        {/* Forest Emerald Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0f2f25] via-[#0c3a2e] to-[#071f19]"></div>
+
+        {/* Bottom Fade */}
+        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#111315]"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-32">
+
+          {/* Editorial Text Block */}
+          <div className="max-w-3xl">
+            <div className="text-xs tracking-[0.3em] uppercase text-[#d4af37] font-semibold mb-6">
+              Bridal & Master Tailoring
+            </div>
+
+            <h1 className="text-4xl md:text-6xl font-bold leading-[1.1] tracking-tight text-white">
+              Wedding Dress & Formal Wear Alterations in Smyrna, TN
             </h1>
-            <p className="mt-4 text-lg text-zinc-600 max-w-3xl">
-              Expert alterations for weddings, formal wear, business attire, and everyday garments.
-              Our experienced tailors ensure a precise, comfortable fit.
+
+            <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
+
+            <p className="mt-8 text-white/80 text-lg leading-relaxed max-w-2xl">
+              Precision bridal alterations, suit tailoring, formal wear adjustments, and garment resizing performed with over 30 years of professional tailoring experience.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+
+            <div className="mt-10">
               <a href="tel:6154625145">
-                <Button variant="secondary">Call Now</Button>
+                <Button>Schedule Your Fitting</Button>
               </a>
             </div>
           </div>
 
-          {/* IMAGE PLACEHOLDER */}
-          <div className="h-64 md:h-80 rounded-2xl bg-white shadow-sm ring-1 ring-black/5 flex items-center justify-center text-zinc-400">
-            Tailoring / Alterations Image
+          {/* Offset Image Block */}
+          <div className="relative mt-20 md:mt-24 md:ml-32">
+            <div className="relative h-[420px] md:h-[520px] overflow-hidden rounded-3xl shadow-[0_40px_120px_rgba(0,0,0,0.55)]">
+              <div className="absolute inset-0 bg-[#1a1d20] flex items-center justify-center text-white/40">
+                Bridal Alterations Image Placeholder
+              </div>
+            </div>
           </div>
-        </section>
 
-        {/* IMPORTANT PRICING NOTES */}
-        <section className="mt-24">
-          <h2 className="text-2xl md:text-3xl font-bold">
-            Important Pricing Notes
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="mt-32">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+          <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
+            Our Services
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+            Alteration & Tailoring Services
           </h2>
 
-          <div className="mt-4 h-1 w-12 bg-yellow-500 rounded"></div>
+          <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
-          <ul className="mt-8 space-y-4 text-zinc-700 max-w-4xl">
-            <li>
-              Pricing varies depending on fabric, garment construction, and
-              complexity.
-            </li>
-            <li>
-              <strong>Express & Same-Day Service:</strong> Express and same-day
-              services may be available depending on garment type and current
-              workload. Availability and pricing are confirmed in-store.
-              Delivery is not included.
-            </li>
-            <li>
-              <strong>Military & Veteran Discount:</strong> We proudly offer a
-              discount for active-duty military and veterans. Please mention
-              in-store.
-            </li>
-            <li>
-              <strong>First-Time Customer Discount:</strong> New customers
-              receive 10% off their first service.
-            </li>
-            <li>
-              Wedding and formal wear typically require an in-person fitting.
-            </li>
-            <li>
-              Final pricing is confirmed in-store after evaluation.
-            </li>
-            <li>
-              Payment is required in-store before work begins.
-            </li>
-          </ul>
-        </section>
-
-        <div className="mt-20 border-t"></div>
-
-        {/* SERVICES LIST */}
-        <section className="mt-32">
-          <h2 className="text-2xl md:text-3xl font-bold">Our Alteration Services</h2>
-          <p className="mt-3 text-zinc-600 max-w-3xl">
-            From simple hemming to complex wedding dress alterations, we handle each garment with care
-            and attention to detail.
-          </p>
-
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <div className="mt-14 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
             {[
-              { name: "Wedding & Prom Dress Alterations", note: "In-store fitting and inspection" },
-              { name: "Suit Tailoring", note: "Professional tailoring for a clean fit" },
-              { name: "Pants Hemming", note: "Common service — quick turnaround" },
-              { name: "Garment Resizing", note: "Complex items may vary" },
-              { name: "Zipper Repairs", note: "Repairs for pants, jeans, coats, and dresses" },
-              { name: "Custom Adjustments", note: "Unique garments handled with care" },
+              "Wedding & Prom Dress Alterations",
+              "Suit Tailoring & Jacket Adjustments",
+              "Pants Hemming & Tapering",
+              "Garment Resizing",
+              "Zipper Repairs",
+              "Custom Fit Adjustments",
             ].map((service) => (
               <div
-                key={service.name}
-                className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5"
+                key={service}
+                className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-8"
               >
-                <h3 className="font-semibold text-lg">{service.name}</h3>
-                <p className="mt-2 text-sm text-zinc-500">{service.note}</p>
+                <h3 className="text-white font-semibold text-lg">
+                  {service}
+                </h3>
+                <p className="mt-3 text-white/60 text-sm leading-relaxed">
+                  Professional in-store fitting and evaluation ensures proper structure and finish.
+                </p>
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ALTERATIONS PRICING */}
-        <section className="mt-32">
-          <h2 className="text-2xl md:text-3xl font-bold">Alterations Starting Prices</h2>
-          <p className="mt-3 text-zinc-600 max-w-3xl">
-            All prices listed are starting prices. Final pricing is confirmed in-store based on garment type,
-            fabric, fit, and complexity.
-          </p>
+      {/* BRIDAL ALTERATIONS SECTION */}
+      <section className="mt-32">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 grid md:grid-cols-2 gap-16 items-center">
 
-          <div className="mt-10 space-y-12 max-w-4xl">
+          <div>
+            <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
+              Bridal & Formal Wear
+            </div>
 
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+              Wedding Dress Alterations in Smyrna, TN
+            </h2>
+
+            <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
+
+            <div className="mt-8 space-y-6 text-white/70 leading-relaxed">
+              <p>
+                Bridal gown alterations require precision, structure, and detailed in-person fittings. From strap adjustments and bustle additions to full resizing and custom modifications, each wedding dress is tailored for balance, comfort, and elegance.
+              </p>
+
+              <p>
+                We also provide prom dress alterations, bridesmaid dress adjustments, and formal evening wear tailoring for clients throughout Smyrna, Murfreesboro, and surrounding Tennessee communities.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative h-[360px] overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+            <div className="absolute inset-0 bg-[#1a1d20] flex items-center justify-center text-white/40">
+              Bridal Alterations Image Placeholder
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* PRICING */}
+      <section className="mt-32">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+          <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
+            Pricing Overview
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+            Alterations Starting Prices
+          </h2>
+
+          <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
+
+          <div className="mt-14 grid gap-12 md:grid-cols-2 text-white/70 leading-relaxed">
             <div>
-              <h3 className="text-xl font-semibold">Pants & Skirts</h3>
-              <ul className="mt-4 space-y-2 text-zinc-700">
+              <h3 className="text-white font-semibold text-xl mb-4">Pants & Skirts</h3>
+              <ul className="space-y-2">
                 <li>Hem — starting at $18.95</li>
                 <li>Cuff — starting at $24.95</li>
-                <li>Waist in / out — starting at $25.95</li>
+                <li>Waist adjustment — starting at $25.95</li>
                 <li>Tapered leg — starting at $25.95</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold">Suits & Jackets</h3>
-              <ul className="mt-4 space-y-2 text-zinc-700">
+              <h3 className="text-white font-semibold text-xl mb-4">Suits & Jackets</h3>
+              <ul className="space-y-2">
                 <li>Full suit tailoring — starting at $125.00</li>
                 <li>Jacket sleeve shortening — starting at $45.95</li>
-                <li>Jacket size in / out — starting at $45.95</li>
+                <li>Jacket size adjustment — starting at $45.95</li>
                 <li>Hem bottom — starting at $65.95</li>
-                <li>Shorten collar — starting at $45.95</li>
               </ul>
             </div>
-
-            <div>
-              <h3 className="text-xl font-semibold">Dresses & Formal Wear</h3>
-              <ul className="mt-4 space-y-2 text-zinc-700">
-                <li>Prom & formal dresses — starting at $75.95</li>
-                <li>Dresses with lining or beads — additional cost</li>
-                <li>Special or complex garments — priced after inspection</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold">Garment Resizing</h3>
-              <ul className="mt-4 space-y-2 text-zinc-700">
-                <li>Garment resizing — starting at $150.00</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold">Zipper Repairs</h3>
-              <ul className="mt-4 space-y-2 text-zinc-700">
-                <li>Pants — starting at $25.95</li>
-                <li>Blue jeans — starting at $28.95</li>
-                <li>Skirts — starting at $25.95</li>
-                <li>Jackets & coats — starting at $39.95</li>
-                <li>Dresses — starting at $39.95</li>
-              </ul>
-            </div>
-
           </div>
 
-          <p className="mt-6 text-sm text-zinc-500 max-w-3xl">
-            Prices may vary depending on fabric, garment construction, and required adjustments.
-            Please call or visit us for exact pricing.
+          <p className="mt-10 text-white/50 text-sm max-w-3xl">
+            Final pricing depends on garment construction, fabric type, and complexity.
+            All pricing is confirmed in-store after professional evaluation.
           </p>
-        </section>
+        </div>
+      </section>
 
-        <div className="mt-20 border-t"></div>
+      {/* LOCAL ALTERATIONS SEO SECTION */}
+      <section className="mt-32">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+          <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
+            Local Alterations Experts
+          </div>
 
-        {/* CTA */}
-        <section className="mt-32 mb-32">
-          <div className="rounded-3xl bg-white p-10 shadow-sm ring-1 ring-black/5 flex flex-col md:flex-row items-center justify-between gap-6">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+            Trusted Alterations in Smyrna, Tennessee
+          </h2>
+
+          <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
+
+          <div className="mt-10 space-y-6 text-white/70 leading-relaxed max-w-4xl">
+            <p>
+              If you are searching for "alterations near me" or professional tailoring in Smyrna, TN, Vila Cleaners & Alterations provides experienced in-store fittings and garment adjustments for residents throughout Smyrna and surrounding areas including Murfreesboro and La Vergne.
+            </p>
+
+            <p>
+              From wedding dress alterations and formal wear tailoring to everyday pant hemming and suit adjustments, each garment is evaluated in person to ensure proper fit and long-lasting results. Our shop is family-owned and operated, delivering dependable craftsmanship and clear communication on every service.
+            </p>
+
+            <p>
+              Visit our Smyrna location for a professional consultation and accurate pricing evaluation before work begins.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ALTERATIONS FAQ SECTION */}
+      <section className="mt-32">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+          <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
+            Alterations FAQ
+          </div>
+
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+            Frequently Asked Questions About Alterations
+          </h2>
+
+          <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
+
+          <div className="mt-10 space-y-8 text-white/70 leading-relaxed">
             <div>
-              <h3 className="text-xl font-semibold">Ready to get the perfect fit?</h3>
-              <p className="mt-2 text-zinc-600">
-                Call or visit us to discuss your garment and alteration needs.
+              <h3 className="text-white font-semibold">How long do alterations take?</h3>
+              <p className="mt-2">Turnaround time depends on garment type and complexity. Most standard alterations are completed within several business days. Bridal and formal wear may require additional fitting appointments.</p>
+            </div>
+
+            <div>
+              <h3 className="text-white font-semibold">Do I need an appointment?</h3>
+              <p className="mt-2">Appointments are recommended for bridal gowns and formal wear. For basic alterations, you may visit during normal business hours for evaluation.</p>
+            </div>
+
+            <div>
+              <h3 className="text-white font-semibold">Is pricing confirmed before work begins?</h3>
+              <p className="mt-2">Yes. All garments are evaluated in person and final pricing is confirmed before any alteration work begins.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How long do alterations take?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Turnaround time depends on garment type and complexity. Most standard alterations are completed within several business days. Bridal and formal wear may require additional fitting appointments."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Do I need an appointment?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Appointments are recommended for bridal gowns and formal wear. For basic alterations, you may visit during normal business hours for evaluation."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Is pricing confirmed before work begins?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes. All garments are evaluated in person and final pricing is confirmed before any alteration work begins."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
+      {/* CTA */}
+      <section className="mt-32 mb-32">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+          <div className="rounded-2xl border border-[#1f5f4d]/60 bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] shadow-[0_30px_90px_rgba(0,0,0,0.55)] p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <h3 className="text-xl font-semibold text-white">
+                Ready for a Perfect Fit?
+              </h3>
+              <p className="mt-2 text-white/60">
+                Visit us in-store for a professional fitting and consultation.
               </p>
             </div>
             <a href="tel:6154625145">
               <Button>Call Now</Button>
             </a>
           </div>
-        </section>
-      </Container>
+        </div>
+      </section>
+
     </main>
   );
 }

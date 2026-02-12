@@ -12,11 +12,13 @@ export default function HomePage() {
     <main className="px-6 md:px-10">
         {/* HERO SECTION */}
         <SectionReveal>
-          <section className="relative mt-32 overflow-hidden rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
+          <section className="relative -mx-6 md:-mx-10 overflow-hidden">
 
             {/* Emerald Gradient Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#184f40] via-[#155a47] to-[#0f3a2f]">
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#0f2f25] via-[#0c3a2e] to-[#071f19]"></div>
+
+            {/* Bottom Fade Into Page Background */}
+            <div className="pointer-events-none absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#111315]"></div>
 
             {/* Gold Accent Curve Layer */}
 
@@ -53,7 +55,7 @@ export default function HomePage() {
 
                 {/* RIGHT IMAGE WITH DEPTH */}
                 <div className="relative">
-                  <div className="relative h-[420px] overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+                <div className="relative h-[420px] overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
                     <img
                       src="/images/hero/hero-tailoring.jpg"
                       alt="Professional tailoring in progress"
@@ -69,7 +71,7 @@ export default function HomePage() {
 
         {/* HOW IT WORKS */}
         <SectionReveal>
-          <section className="mt-40 py-20">
+          <section className="mt-32 py-20">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
               What to Expect
             </h2>
@@ -95,7 +97,7 @@ export default function HomePage() {
               ].map((item) => (
                 <div
                   key={item.step}
-                  className="p-6 border border-white/10 bg-white/5 backdrop-blur-sm rounded-xl"
+                  className="p-8 rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
                 >
                   <div className="text-sm font-semibold text-white/50">Step</div>
                   <h3 className="mt-2 text-lg font-semibold text-white">{item.step}</h3>
@@ -139,7 +141,7 @@ export default function HomePage() {
                 ].map((review, idx) => (
                   <div
                     key={idx}
-                    className="p-8 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.25)]"
+                    className="p-8 rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
                   >
                     <h3 className="text-sm font-semibold text-white">
                       {review.title}
@@ -257,7 +259,7 @@ export default function HomePage() {
               ].map((service) => (
                 <div
                   key={service.name}
-                  className="border border-white/10 bg-white/5 backdrop-blur-sm rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-8"
+                  className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-8"
                 >
                   <h3 className="font-semibold text-lg text-white">
                     {service.name}
@@ -274,7 +276,7 @@ export default function HomePage() {
 
         {/* ABOUT US BRIDGE */}
         <SectionReveal>
-          <section className="mt-40 relative">
+          <section className="mt-32 relative">
 
             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#d4af37] via-transparent to-transparent"></div>
 
@@ -306,7 +308,7 @@ export default function HomePage() {
 
               <div className="relative">
                 <div className="absolute -top-6 -left-6 w-full h-full border border-white/10"></div>
-                <div className="relative h-72 md:h-96 overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.4)]">
+                <div className="relative h-72 md:h-96 overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
                   <img
                     src="/images/about/about-tailor.jpg"
                     alt="Family-owned tailoring business"
@@ -336,7 +338,7 @@ export default function HomePage() {
               {["Suits & Blazers", "Dresses", "Coats & Jackets", "Specialty Items"].map((item) => (
                 <div
                   key={item}
-                  className="border border-white/10 bg-white/5 backdrop-blur-sm rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-8"
+                  className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-8"
                 >
                   <div className="font-semibold text-white">{item}</div>
                   <div className="mt-2 text-sm text-white/60">Pricing varies</div>
@@ -370,7 +372,7 @@ export default function HomePage() {
               {/* BEFORE */}
               <div>
                 <div className="text-sm font-semibold text-white/60 mb-3">Before</div>
-                <div className="relative h-80 overflow-hidden rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.15)]">
+                <div className="relative h-80 overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
                   <img
                     src="/images/before-after/before.jpg"
                     alt="Garment before alterations"
@@ -382,7 +384,7 @@ export default function HomePage() {
               {/* AFTER */}
               <div>
                 <div className="text-sm font-semibold text-[#d4af37] mb-3">After</div>
-                <div className="relative h-80 overflow-hidden rounded-3xl shadow-[0_25px_70px_rgba(0,0,0,0.25)]">
+                <div className="relative h-80 overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
                   <img
                     src="/images/before-after/after.jpg"
                     alt="Garment after professional alterations"
@@ -398,7 +400,7 @@ export default function HomePage() {
 
         {/* CRAFT IN ACTION */}
         <SectionReveal>
-          <section className="mt-40 relative mx-6 md:mx-10 overflow-hidden rounded-[50px] bg-gradient-to-br from-[#0e2a22] via-[#123b2f] to-[#0a211b] py-24 px-8 md:px-20 shadow-[0_50px_140px_rgba(0,0,0,0.45)]">
+          <section className="mt-32 relative mx-6 md:mx-10 overflow-hidden rounded-[50px] bg-gradient-to-br from-[#0e2a22] via-[#123b2f] to-[#0a211b] py-24 px-8 md:px-20 shadow-[0_50px_140px_rgba(0,0,0,0.45)]">
 
             {/* Subtle gold accent bar */}
             <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
@@ -446,6 +448,55 @@ export default function HomePage() {
           </section>
         </SectionReveal>
 
+        {/* IMPORTANT PRICING NOTES */}
+        <SectionReveal>
+          <section className="mt-32 py-28 relative">
+
+            <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+
+              <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
+                Service Information
+              </div>
+
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
+                Important Pricing & Service Notes
+              </h2>
+
+              <div className="mt-8 h-[2px] w-28 bg-[#d4af37]"></div>
+
+              <div className="mt-16 grid gap-8 md:grid-cols-3">
+
+                <div className="border-t border-[#d4af37]/40 pt-6">
+                  <h3 className="text-white font-semibold">Pricing Varies</h3>
+                  <p className="mt-3 text-white/70 text-sm leading-relaxed">
+                    Final pricing depends on fabric type, garment construction, and alteration complexity. All pricing is confirmed in-store after professional evaluation.
+                  </p>
+                </div>
+
+                <div className="border-t border-[#d4af37]/40 pt-6">
+                  <h3 className="text-white font-semibold">Express Service</h3>
+                  <p className="mt-3 text-white/70 text-sm leading-relaxed">
+                    Express and same-day services may be available depending on garment type and current workload. Availability and timing are confirmed in-store.
+                  </p>
+                </div>
+
+                <div className="border-t border-[#d4af37]/40 pt-6">
+                  <h3 className="text-white font-semibold">Discounts Available</h3>
+                  <p className="mt-3 text-white/70 text-sm leading-relaxed">
+                    We proudly offer military and veteran discounts. First-time customers receive 10% off their first service.
+                  </p>
+                </div>
+
+              </div>
+
+              <div className="mt-12 max-w-3xl text-white/60 text-sm leading-relaxed">
+                Wedding and formal wear typically require an in-person fitting. Payment is required in-store before alteration or cleaning work begins.
+              </div>
+
+            </div>
+          </section>
+        </SectionReveal>
+
         {/* FAQ SECTION */}
         <SectionReveal>
           <section className="mt-32 py-24">
@@ -486,7 +537,7 @@ export default function HomePage() {
                     return (
                       <div
                         key={idx}
-                        className="border border-white/10 bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden transition-all duration-300"
+                        className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] overflow-hidden transition-all duration-300"
                       >
                         <button
                           onClick={() => setActive(isOpen ? null : idx)}
