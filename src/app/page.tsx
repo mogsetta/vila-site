@@ -316,7 +316,7 @@ export default function HomePage() {
                 <div className="absolute -top-6 -left-6 w-full h-full border border-white/10"></div>
                 <div className="relative h-72 md:h-96 overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
                   <img
-                    src="/images/about/about-tailor.jpg"
+                    src="/images/hero/family-owned.jpg"
                     alt="Family-owned tailoring business"
                     className="h-full w-full object-cover"
                   />
@@ -355,54 +355,6 @@ export default function HomePage() {
         </SectionReveal>
 
 
-        {/* BEFORE & AFTER SHOWCASE */}
-        <SectionReveal>
-          <section className="mt-32 py-24">
-
-            <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
-              Before & After
-            </div>
-
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-              Precision Alterations, Visible Results
-            </h2>
-
-            <p className="mt-4 text-white/70 max-w-3xl">
-              See the difference professional tailoring makes. From detailed resizing to
-              wedding dress adjustments, every garment is carefully altered for a
-              precise and polished fit.
-            </p>
-
-            <div className="mt-12 grid gap-10 md:grid-cols-2">
-
-              {/* BEFORE */}
-              <div>
-                <div className="text-sm font-semibold text-white/60 mb-3">Before</div>
-                <div className="relative h-80 overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
-                  <img
-                    src="/images/before-after/before.jpg"
-                    alt="Garment before alterations"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* AFTER */}
-              <div>
-                <div className="text-sm font-semibold text-[#d4af37] mb-3">After</div>
-                <div className="relative h-80 overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
-                  <img
-                    src="/images/before-after/after.jpg"
-                    alt="Garment after professional alterations"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              </div>
-
-            </div>
-
-          </section>
-        </SectionReveal>
 
         {/* CRAFT IN ACTION */}
         <SectionReveal>
@@ -443,7 +395,7 @@ export default function HomePage() {
                 <div className="absolute -bottom-6 -right-6 w-full h-full border border-[#d4af37]/30 rounded-3xl"></div>
                 <div className="relative h-80 md:h-[420px] overflow-hidden rounded-3xl shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
                   <img
-                    src="/images/craft/sewing-action.jpg"
+                    src="/images/hero/sewing-action.jpg"
                     alt="Master tailor working at sewing machine"
                     className="h-full w-full object-cover"
                   />

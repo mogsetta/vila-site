@@ -305,13 +305,38 @@ export default function DryCleaningPage() {
 
           <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
-          <div className="mt-14 grid md:grid-cols-2 gap-10">
-            <div className="h-[320px] rounded-2xl bg-[#1a1d20] flex items-center justify-center text-white/40 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
-              Pressing Equipment Image Placeholder
+          <div className="mt-14 grid md:grid-cols-2 gap-12 items-start">
+
+            {/* BEFORE */}
+            <div>
+              <div className="mb-4 text-sm tracking-widest uppercase text-[#d4af37] font-semibold">
+                Before Cleaning
+              </div>
+
+              <div className="rounded-2xl overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.55)] border border-white/10">
+                <img
+                  src="/images/dry-cleaning/dry-cleaning-before.jpg"
+                  alt="Baseball uniform before professional dry cleaning"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
-            <div className="h-[320px] rounded-2xl bg-[#1a1d20] flex items-center justify-center text-white/40 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
-              Garment Inspection Image Placeholder
+
+            {/* AFTER */}
+            <div>
+              <div className="mb-4 text-sm tracking-widest uppercase text-[#d4af37] font-semibold">
+                After Cleaning
+              </div>
+
+              <div className="rounded-2xl overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.55)] border border-white/10">
+                <img
+                  src="/images/dry-cleaning/dry-cleaning-after.jpg"
+                  alt="Baseball uniform after professional dry cleaning"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </div>
+
           </div>
         </div>
       </section>

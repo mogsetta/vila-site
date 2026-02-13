@@ -62,6 +62,7 @@ export default function AlterationsPage() {
 
         {/* Forest Emerald Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#0f2f25] via-[#0c3a2e] to-[#071f19]"></div>
+        <div className="absolute inset-0 opacity-[0.06] bg-[radial-gradient(circle_at_20%_30%,#d4af37_1px,transparent_1px),radial-gradient(circle_at_80%_70%,#ffffff_1px,transparent_1px)] bg-[length:60px_60px]"></div>
 
         {/* Bottom Fade */}
         <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#111315]"></div>
@@ -78,7 +79,9 @@ export default function AlterationsPage() {
               Wedding Dress, Suit & Formal Wear Alterations in Smyrna, TN
             </h1>
 
-            <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
+            <div className="relative mt-8 h-[2px] w-24 bg-[#d4af37]">
+              <div className="absolute inset-0 bg-[#d4af37] blur-md opacity-40"></div>
+            </div>
 
             <p className="mt-8 text-white/80 text-lg leading-relaxed max-w-2xl">
               Precision bridal alterations, suit tailoring, formal wear adjustments, and garment resizing performed with over 30 years of professional tailoring experience.
@@ -91,14 +94,6 @@ export default function AlterationsPage() {
             </div>
           </div>
 
-          {/* Offset Image Block */}
-          <div className="relative mt-20 md:mt-24 md:ml-32">
-            <div className="relative h-[420px] md:h-[520px] overflow-hidden rounded-3xl shadow-[0_40px_120px_rgba(0,0,0,0.55)]">
-              <div className="absolute inset-0 bg-[#1a1d20] flex items-center justify-center text-white/40">
-                Bridal Alterations Image Placeholder
-              </div>
-            </div>
-          </div>
 
         </div>
       </section>
@@ -171,10 +166,12 @@ export default function AlterationsPage() {
             </div>
           </div>
 
-          <div className="relative h-[360px] overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
-            <div className="absolute inset-0 bg-[#1a1d20] flex items-center justify-center text-white/40">
-              Bridal Alterations Image Placeholder
-            </div>
+          <div className="relative rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)] bg-[#0c241e] p-6">
+            <img
+              src="/images/alterations/gold-formal-dress.jpg"
+              alt="Wedding dress alteration results"
+              className="w-full h-auto object-contain rounded-xl"
+            />
           </div>
 
         </div>

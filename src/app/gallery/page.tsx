@@ -1,11 +1,9 @@
 "use client";
 
-import { useState } from "react";
+// removed slider state (no longer needed)
 import SectionReveal from "../../components/SectionReveal";
 
 export default function GalleryPage() {
-  const [slider, setSlider] = useState(50);
-
   return (
     <main className="relative">
 
@@ -40,52 +38,32 @@ export default function GalleryPage() {
             </h2>
             <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
-            <div className="mt-12">
-              <div className="relative h-[500px] rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_30px_90px_rgba(0,0,0,0.6)]">
+            <div className="mt-12 grid md:grid-cols-2 gap-8">
+              
+              {/* BEFORE */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_30px_90px_rgba(0,0,0,0.6)] bg-[#071f19]">
+                <img
+                  src="/images/gallery/wedding-dress-alteration-before.jpg"
+                  alt="Wedding Dress Before Alterations"
+                  className="w-full h-[500px] object-cover"
+                />
+                <div className="px-6 py-4 text-white/80 text-sm tracking-wide uppercase">
+                  Before Alterations
+                </div>
+              </div>
 
-                {/* AFTER (Full Background) */}
+              {/* AFTER */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_30px_90px_rgba(0,0,0,0.6)] bg-[#071f19]">
                 <img
                   src="/images/gallery/wedding-dress-alteration-after.jpg"
                   alt="Wedding Dress After Alterations"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="w-full h-[500px] object-cover"
                 />
-
-                {/* BEFORE (Dynamic Width Overlay) */}
-                <div
-                  className="absolute inset-y-0 left-0 overflow-hidden border-r border-[#d4af37]/40"
-                  style={{ width: `${slider}%` }}
-                >
-                  <img
-                    src="/images/gallery/wedding-dress-alteration-before.jpg"
-                    alt="Wedding Dress Before Alterations"
-                    className="w-full h-full object-cover"
-                  />
+                <div className="px-6 py-4 text-white/80 text-sm tracking-wide uppercase">
+                  After Alterations
                 </div>
-
-                {/* Divider Line */}
-                <div
-                  className="absolute inset-y-0 w-[2px] bg-[#d4af37]"
-                  style={{ left: `${slider}%` }}
-                ></div>
-                {/* Slider Handle */}
-                <div
-                  className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#d4af37] shadow-[0_8px_25px_rgba(212,175,55,0.5)] flex items-center justify-center text-[#061410] font-bold text-sm pointer-events-none"
-                  style={{ left: `${slider}%` }}
-                >
-                  ⇆
-                </div>
-
-                {/* Range Slider Control */}
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  value={slider}
-                  onChange={(e) => setSlider(Number(e.target.value))}
-                  className="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize"
-                />
-
               </div>
+
             </div>
           </div>
         </section>
@@ -101,16 +79,31 @@ export default function GalleryPage() {
             <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
             <div className="mt-12 grid gap-8 md:grid-cols-3">
-              <div className="h-80 rounded-3xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] flex items-center justify-center text-white/40">
-                NFL / High-Profile Client Placeholder
+              {/* CLIENT 1 */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
+                <img
+                  src="/images/gallery/nfl-event.jpg"
+                  alt="Vila Cleaners with high-profile clients"
+                  className="w-full object-contain bg-[#071f19]"
+                />
               </div>
 
-              <div className="h-80 rounded-3xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] flex items-center justify-center text-white/40">
-                Sewing Process Placeholder
+              {/* CLIENT 2 */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
+                <img
+                  src="/images/gallery/nfl-client.jpg"
+                  alt="Vila Cleaners client photo"
+                  className="w-full object-contain bg-[#071f19]"
+                />
               </div>
 
-              <div className="h-80 rounded-3xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] flex items-center justify-center text-white/40">
-                Family / Business Placeholder
+              {/* CLIENT 3 */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
+                <img
+                  src="/images/gallery/celebrity-client.jpg"
+                  alt="Vila Cleaners craftsmanship and clients"
+                  className="w-full object-contain bg-[#071f19]"
+                />
               </div>
             </div>
           </div>
