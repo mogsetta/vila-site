@@ -44,16 +44,22 @@ export default function GalleryPage() {
               <div className="relative h-[500px] rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_30px_90px_rgba(0,0,0,0.6)]">
 
                 {/* AFTER (Full Background) */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] flex items-center justify-center text-white/40 text-lg">
-                  After Image Placeholder
-                </div>
+                <img
+                  src="/images/gallery/wedding-dress-alteration-after.jpg"
+                  alt="Wedding Dress After Alterations"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
 
                 {/* BEFORE (Dynamic Width Overlay) */}
                 <div
-                  className="absolute inset-y-0 left-0 bg-[#0b1f19] flex items-center justify-center text-white/40 text-lg border-r border-[#d4af37]/40"
+                  className="absolute inset-y-0 left-0 overflow-hidden border-r border-[#d4af37]/40"
                   style={{ width: `${slider}%` }}
                 >
-                  Before Image Placeholder
+                  <img
+                    src="/images/gallery/wedding-dress-alteration-before.jpg"
+                    alt="Wedding Dress Before Alterations"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Divider Line */}

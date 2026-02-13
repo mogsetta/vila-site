@@ -1,6 +1,7 @@
 import Button from "../../components/Button";
 import Link from "next/link";
 import SectionReveal from "../../components/SectionReveal";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -28,11 +29,18 @@ export default function AboutPage() {
               For over three decades, Keeow Phonxaya has dedicated her life to the craft of tailoring — serving the Smyrna community with precision, integrity, and personal care. Every garment is treated not just as clothing, but as something meaningful to the person who wears it.
             </p>
 
-            <div className="mt-14 h-[420px] rounded-3xl bg-[#1a1d20] flex items-center justify-center text-white/40 shadow-[0_30px_90px_rgba(0,0,0,0.45)]">
-              Sewing / Family Image Placeholder
+            <div className="mt-14 relative h-[500px] w-full rounded-3xl overflow-hidden shadow-[0_30px_90px_rgba(0,0,0,0.45)]">
+              <Image
+                src="/images/about/about-hero.jpg"
+                alt="Keeow Phonxaya with clients"
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
             </div>
             <p className="mt-4 text-sm text-white/50 italic">
-              Keeow at work — where every stitch reflects decades of experience.
+              Serving the Smyrna community with professionalism, trust, and decades of experience.
             </p>
           </div>
         </section>
@@ -127,14 +135,32 @@ export default function AboutPage() {
         <section className="mt-32">
           <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
             <div className="grid gap-6 md:grid-cols-3">
-              {Array.from({ length: 3 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="h-64 rounded-2xl bg-[#1a1d20] flex items-center justify-center text-white/40 shadow-[0_20px_60px_rgba(0,0,0,0.4)]"
-                >
-                  Client / Work Image Placeholder
-                </div>
-              ))}
+              <div className="relative h-72 rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+                <Image
+                  src="/images/about/about-client-1.jpg"
+                  alt="Keeow with client"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="relative h-72 rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+                <Image
+                  src="/images/about/about-client-2.jpg"
+                  alt="Professional client photo"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="relative h-72 rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+                <Image
+                  src="/images/about/about-client-3.jpg"
+                  alt="Community client photo"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>
