@@ -73,9 +73,10 @@ export default function HomePage() {
           </section>
         </SectionReveal>
 
+
         {/* HOW IT WORKS */}
         <SectionReveal>
-          <section className="mt-32 py-24">
+          <section className="mt-24 py-20">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
               What to Expect
             </h2>
@@ -114,7 +115,7 @@ export default function HomePage() {
 
         {/* GOOGLE REVIEWS */}
         <SectionReveal>
-          <section className="mt-32 mx-6 md:mx-10 rounded-[40px] overflow-hidden bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-24 px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.35)]">
+          <section className="mt-28 mx-6 md:mx-10 rounded-[40px] overflow-hidden bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-24 px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.35)]">
             <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
               What Our Customers Say
             </h2>
@@ -172,7 +173,7 @@ export default function HomePage() {
 
         {/* AUTHORITY SECTION */}
         <SectionReveal>
-          <section className="mt-32 py-24">
+          <section className="mt-36 py-28">
             <div className="grid gap-16 md:grid-cols-2 items-start">
 
               <div>
@@ -239,7 +240,7 @@ export default function HomePage() {
 
         {/* ALTERATIONS SERVICES */}
         <SectionReveal>
-          <section className="mt-32 py-24">
+          <section className="mt-28 py-24">
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Specialized Services
             </div>
@@ -263,12 +264,13 @@ export default function HomePage() {
               ].map((service) => (
                 <div
                   key={service.name}
-                  className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-8"
+                  className="group relative rounded-2xl border border-white/25 bg-[linear-gradient(135deg,#6f757d_0%,#4b5056_25%,#7c828a_45%,#3f444a_65%,#5c6269_85%,#2e3338_100%)] shadow-[0_30px_80px_rgba(0,0,0,0.6)] p-8 overflow-hidden transition-all duration-500"
                 >
-                  <h3 className="font-semibold text-lg text-white">
+                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(255,255,255,0.14),transparent_40%),linear-gradient(120deg,rgba(255,255,255,0.08)_0%,transparent_30%),linear-gradient(to_bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.15))] opacity-50 group-hover:opacity-60 transition-opacity duration-500"></div>
+                  <h3 className="font-semibold text-lg text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
                     {service.name}
                   </h3>
-                  <p className="mt-2 text-sm text-white/60">
+                  <p className="mt-2 text-sm text-white/85 drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)]">
                     {service.note}
                   </p>
                 </div>
@@ -280,7 +282,7 @@ export default function HomePage() {
 
         {/* ABOUT US BRIDGE */}
         <SectionReveal>
-          <section className="mt-32 relative">
+          <section className="mt-36 relative">
 
             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#d4af37] via-transparent to-transparent"></div>
 
@@ -330,24 +332,25 @@ export default function HomePage() {
 
         {/* DRY CLEANING PREVIEW */}
         <SectionReveal>
-          <section className="mt-32 py-24">
+          <section className="mt-28 py-24">
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Professional Garment Care
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">Dry Cleaning</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight text-white">Professional Dry Cleaning Services</h2>
 
-            <p className="mt-4 text-white/70 max-w-3xl">
-              Professional dry cleaning services available for everyday garments and specialty items.
+            <p className="mt-4 text-white/80 max-w-3xl leading-relaxed">
+              Our professional dry cleaning services in Smyrna, TN are designed to preserve fabric quality, restore structure, and extend the life of your garments. From everyday business wear to specialty pieces, each item is handled with precision care.
             </p>
 
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
+            <div className="mt-14 grid gap-8 sm:grid-cols-2 md:grid-cols-4">
               {["Suits & Blazers", "Dresses", "Coats & Jackets", "Specialty Items"].map((item) => (
                 <div
                   key={item}
-                  className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-8"
+                  className="group relative rounded-2xl border border-white/25 bg-[linear-gradient(135deg,#6f757d_0%,#4b5056_25%,#7c828a_45%,#3f444a_65%,#5c6269_85%,#2e3338_100%)] shadow-[0_30px_80px_rgba(0,0,0,0.6)] p-8 overflow-hidden transition-all duration-500"
                 >
-                  <div className="font-semibold text-white">{item}</div>
-                  <div className="mt-2 text-sm text-white/60">Pricing varies</div>
+                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(255,255,255,0.14),transparent_40%),linear-gradient(120deg,rgba(255,255,255,0.08)_0%,transparent_30%),linear-gradient(to_bottom,rgba(0,0,0,0.35),rgba(0,0,0,0.15))] opacity-50 group-hover:opacity-60 transition-opacity duration-500"></div>
+                  <div className="font-semibold text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">{item}</div>
+                  <div className="mt-2 text-sm text-white/85 drop-shadow-[0_1px_4px_rgba(0,0,0,0.6)]">Pricing varies</div>
                 </div>
               ))}
             </div>
@@ -358,7 +361,7 @@ export default function HomePage() {
 
         {/* CRAFT IN ACTION */}
         <SectionReveal>
-          <section className="mt-32 relative mx-6 md:mx-10 overflow-hidden rounded-[50px] bg-gradient-to-br from-[#0e2a22] via-[#123b2f] to-[#0a211b] py-24 px-8 md:px-20 shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
+          <section className="mt-40 relative mx-6 md:mx-10 overflow-hidden rounded-[50px] bg-gradient-to-br from-[#0e2a22] via-[#123b2f] to-[#0a211b] py-28 px-8 md:px-20 shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
 
             {/* Subtle gold accent bar */}
             <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
@@ -408,7 +411,7 @@ export default function HomePage() {
 
         {/* IMPORTANT PRICING NOTES */}
         <SectionReveal>
-          <section className="mt-32 py-28 relative">
+          <section className="mt-28 py-24 relative">
 
             <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
 
@@ -457,7 +460,7 @@ export default function HomePage() {
 
         {/* FAQ SECTION */}
         <SectionReveal>
-          <section className="mt-32 py-24">
+          <section className="mt-24 py-20">
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Frequently Asked Questions
             </div>
@@ -531,7 +534,7 @@ export default function HomePage() {
 
         {/* LOCATION & HOURS */}
         <SectionReveal>
-          <section className="mt-32 py-24">
+          <section className="mt-28 py-24">
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Location & Hours
             </div>
@@ -564,6 +567,38 @@ export default function HomePage() {
                     Get Directions
                   </a>
                 </div>
+              </div>
+            </div>
+          </section>
+        </SectionReveal>
+
+        {/* FINAL CTA */}
+        <SectionReveal>
+          <section className="mt-32 mb-20 mx-6 md:mx-10 overflow-hidden rounded-[40px] bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-24 px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.45)] relative">
+
+            {/* Subtle gold accent line */}
+            <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
+
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                Ready for Expert Alterations or Dry Cleaning?
+              </h2>
+
+              <p className="mt-6 text-white/85 leading-relaxed">
+                Visit Vila Cleaners & Alterations in Smyrna, TN for professional tailoring, wedding dress alterations, suit adjustments, and dependable dry cleaning services.
+              </p>
+
+              <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+16154625145">
+                  <Button variant="primary">Call Now</Button>
+                </a>
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=901+Rock+Springs+Rd+%23130+Smyrna+TN+37167"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="secondary">Get Directions</Button>
+                </a>
               </div>
             </div>
           </section>
