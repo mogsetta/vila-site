@@ -13,7 +13,7 @@ export default function SiteHeader() {
       <div className="mx-auto max-w-6xl px-6 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-6">
         <Link href="/" className="inline-flex items-center leading-none">
           <Image
-            src="/images/logo/Layer1.png"
+            src="/images/logo/logo.png"
             alt="Vila Cleaners & Alterations"
             width={700}
             height={200}
