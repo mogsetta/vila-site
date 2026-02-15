@@ -78,6 +78,15 @@ export default function ServicePoliciesPage() {
 
               <div>
                 <h2 className="text-white font-semibold text-xl">
+                  Lost or Damaged Items
+                </h2>
+                <p className="mt-3">
+                  In the rare event that a garment is lost or damaged while in our care, customers will receive store credit. Store credit will be issued based on a fair evaluation of the item.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-white font-semibold text-xl">
                   Payment Policy
                 </h2>
                 <p className="mt-3">

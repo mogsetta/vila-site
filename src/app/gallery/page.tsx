@@ -84,7 +84,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/nfl-event.jpg"
                   alt="Vila Cleaners with high-profile clients"
-                  className="w-full object-contain bg-[#071f19]"
+                  className="w-full h-[350px] object-cover"
                 />
               </div>
 
@@ -93,7 +93,7 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/nfl-client.jpg"
                   alt="Vila Cleaners client photo"
-                  className="w-full object-contain bg-[#071f19]"
+                  className="w-full h-[350px] object-cover"
                 />
               </div>
 
@@ -102,7 +102,61 @@ export default function GalleryPage() {
                 <img
                   src="/images/gallery/celebrity-client.jpg"
                   alt="Vila Cleaners craftsmanship and clients"
-                  className="w-full object-contain bg-[#071f19]"
+                  className="w-full h-[350px] object-cover"
+                />
+              </div>
+
+              {/* CLIENT 4 */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
+                <img
+                  src="/images/gallery/client-4.jpg"
+                  alt="Vila Cleaners additional client photo"
+                  className="w-full h-[350px] object-cover"
+                />
+              </div>
+
+              {/* CLIENT 5 */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
+                <img
+                  src="/images/gallery/client-5.jpg"
+                  alt="Vila Cleaners additional client photo"
+                  className="w-full h-[350px] object-cover"
+                />
+              </div>
+
+              {/* CLIENT 6 */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
+                <img
+                  src="/images/gallery/client-6.jpg"
+                  alt="Vila Cleaners additional client photo"
+                  className="w-full h-[350px] object-cover"
+                />
+              </div>
+
+              {/* CLIENT 7 */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
+                <img
+                  src="/images/gallery/client-7.jpg"
+                  alt="Vila Cleaners additional client photo"
+                  className="w-full h-[350px] object-cover"
+                />
+              </div>
+
+              {/* CLIENT 8 */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
+                <img
+                  src="/images/gallery/client-8.jpg"
+                  alt="Vila Cleaners additional client photo"
+                  className="w-full h-[350px] object-cover"
+                />
+              </div>
+
+              {/* CLIENT 9 */}
+              <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
+                <img
+                  src="/images/gallery/client-9.jpg"
+                  alt="Vila Cleaners additional client photo"
+                  className="w-full h-[350px] object-cover"
                 />
               </div>
             </div>
