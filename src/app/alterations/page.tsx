@@ -1,7 +1,7 @@
 // UPGRADED DARK FULL-BLEED EMERALD HERO VERSION
 
 export const metadata = {
-  title: "Alterations in Smyrna TN | Wedding Dress & Suit Tailoring | Vila Cleaners",
+  title: "Alterations in Smyrna TN | Suit Tailoring, Dress & Pants Hemming | Vila Cleaners",
   description:
     "Professional clothing alterations in Smyrna, TN. Wedding dress alterations, suit tailoring, hemming, resizing, and formal wear adjustments. 30+ years of experience.",
   keywords: [
@@ -44,7 +44,20 @@ export default function AlterationsPage() {
               addressCountry: "US",
             },
             telephone: "+16154625145",
-            areaServed: "Smyrna TN",
+            areaServed: [
+              {
+                "@type": "City",
+                name: "Smyrna",
+              },
+              {
+                "@type": "City",
+                name: "La Vergne",
+              },
+              {
+                "@type": "City",
+                name: "Murfreesboro",
+              },
+            ],
             makesOffer: {
               "@type": "Offer",
               itemOffered: {
@@ -108,29 +121,59 @@ export default function AlterationsPage() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-            Alteration & Tailoring Services
+            Alteration & Tailoring Services in Smyrna, TN
           </h2>
 
           <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
+          <div className="mt-8 max-w-3xl text-white/70 leading-relaxed">
+            <p>
+              If you’re searching for professional alterations in Smyrna TN, our experienced tailoring team provides precise in-person fittings and garment adjustments for wedding dresses, suits, pants, and everyday clothing. We focus on structure, balance, and long-lasting results for every client in Smyrna and surrounding areas.
+            </p>
+          </div>
+
           <div className="mt-14 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
             {[
-              "Wedding & Prom Dress Alterations",
-              "Suit Tailoring & Jacket Adjustments",
-              "Pants Hemming & Tapering",
-              "Garment Resizing",
-              "Zipper Repairs",
-              "Custom Fit Adjustments",
+              {
+                name: "Wedding & Prom Dress Alterations in Smyrna",
+                note:
+                  "Professional wedding dress and formal gown alterations in Smyrna, TN including hemming, resizing, and detailed in-person bridal fittings.",
+              },
+              {
+                name: "Suit Tailoring in Smyrna",
+                note:
+                  "Expert suit tailoring and jacket adjustments in Smyrna, TN for sleeves, waist suppression, tapering, and complete suit alterations.",
+              },
+              {
+                name: "Pants Hemming in Smyrna",
+                note:
+                  "Precise pants hemming and tapering services in Smyrna, TN for dress pants, jeans, uniforms, and everyday garments.",
+              },
+              {
+                name: "Dress & Clothing Alterations in Smyrna",
+                note:
+                  "Comprehensive clothing alterations in Smyrna, TN including resizing, structural adjustments, and custom garment modifications.",
+              },
+              {
+                name: "Zipper Repair in Smyrna",
+                note:
+                  "Reliable zipper repair services in Smyrna, TN for pants, jackets, coats, dresses, and specialty garments.",
+              },
+              {
+                name: "Clothing Repair in Smyrna",
+                note:
+                  "Professional clothing repair services in Smyrna, TN including seam repair, patching, and reinforcement of worn garments.",
+              },
             ].map((service) => (
               <div
-                key={service}
+                key={service.name}
                 className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-6 md:p-8"
               >
                 <h3 className="text-white font-semibold text-lg">
-                  {service}
+                  {service.name}
                 </h3>
                 <p className="mt-3 text-white/60 text-sm leading-relaxed">
-                  Professional in-store fitting and evaluation ensures proper structure and finish.
+                  {service.note}
                 </p>
               </div>
             ))}
@@ -243,7 +286,7 @@ export default function AlterationsPage() {
 
           <div className="mt-10 space-y-6 text-white/70 leading-relaxed max-w-4xl">
             <p>
-              If you are searching for "alterations near me" or professional tailoring in Smyrna, TN, Vila Cleaners & Alterations provides experienced in-store fittings and garment adjustments for residents throughout Smyrna and surrounding areas including Murfreesboro and La Vergne.
+              If you are searching for <Link href="/" className="text-[#d4af37] underline underline-offset-4">alterations in Smyrna</Link> or professional tailoring in Smyrna, TN, Vila Cleaners & Alterations provides experienced in-store fittings and garment adjustments for residents throughout Smyrna and surrounding areas including Murfreesboro and La Vergne.
             </p>
 
             <p>
@@ -267,30 +310,80 @@ export default function AlterationsPage() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-            Frequently Asked Questions About Alterations
+            Frequently Asked Questions About Alterations in Smyrna, TN
           </h2>
 
           <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
           <div className="mt-10 space-y-8 text-white/70 leading-relaxed">
             <div>
-              <h3 className="text-white font-semibold">How long do alterations take?</h3>
+              <h3 className="text-white font-semibold">How long do alterations take in Smyrna, TN?</h3>
               <p className="mt-2">Turnaround time depends on garment type and complexity. Most standard alterations are completed within several business days. Bridal and formal wear may require additional fitting appointments.</p>
             </div>
 
             <div>
-              <h3 className="text-white font-semibold">Do I need an appointment?</h3>
+              <h3 className="text-white font-semibold">Do I need an appointment for alterations in Smyrna?</h3>
               <p className="mt-2">Appointments are recommended for bridal gowns and formal wear. For basic alterations, you may visit during normal business hours for evaluation.</p>
             </div>
 
             <div>
-              <h3 className="text-white font-semibold">Is pricing confirmed before work begins?</h3>
+              <h3 className="text-white font-semibold">Is alteration pricing confirmed before work begins in Smyrna?</h3>
               <p className="mt-2">Yes. All garments are evaluated in person and final pricing is confirmed before any alteration work begins.</p>
             </div>
           </div>
         </div>
       </section>
       </SectionReveal>
+
+      {/* Service Schema for Clothing Alterations */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Clothing Alterations in Smyrna, TN",
+            provider: {
+              "@type": "LocalBusiness",
+              name: "Vila Cleaners & Alterations",
+              url: "https://vilacleanersalterations.com/alterations",
+            },
+            areaServed: [
+              {
+                "@type": "City",
+                name: "Smyrna",
+              },
+              {
+                "@type": "City",
+                name: "La Vergne",
+              },
+              {
+                "@type": "City",
+                name: "Murfreesboro",
+              },
+            ],
+            serviceType: [
+              "Wedding Dress Alterations",
+              "Suit Tailoring",
+              "Pants Hemming",
+              "Zipper Repair",
+              "Clothing Repair",
+            ],
+            availableChannel: {
+              "@type": "ServiceChannel",
+              serviceLocation: {
+                "@type": "Place",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Smyrna",
+                  addressRegion: "TN",
+                  addressCountry: "US",
+                },
+              },
+            },
+          }),
+        }}
+      />
 
       <script
         type="application/ld+json"
@@ -301,7 +394,7 @@ export default function AlterationsPage() {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "How long do alterations take?",
+                name: "How long do alterations take in Smyrna, TN?",
                 acceptedAnswer: {
                   "@type": "Answer",
                   text: "Turnaround time depends on garment type and complexity. Most standard alterations are completed within several business days. Bridal and formal wear may require additional fitting appointments."
@@ -309,7 +402,7 @@ export default function AlterationsPage() {
               },
               {
                 "@type": "Question",
-                name: "Do I need an appointment?",
+                name: "Do I need an appointment for alterations in Smyrna?",
                 acceptedAnswer: {
                   "@type": "Answer",
                   text: "Appointments are recommended for bridal gowns and formal wear. For basic alterations, you may visit during normal business hours for evaluation."
@@ -317,7 +410,7 @@ export default function AlterationsPage() {
               },
               {
                 "@type": "Question",
-                name: "Is pricing confirmed before work begins?",
+                name: "Is alteration pricing confirmed before work begins in Smyrna?",
                 acceptedAnswer: {
                   "@type": "Answer",
                   text: "Yes. All garments are evaluated in person and final pricing is confirmed before any alteration work begins."

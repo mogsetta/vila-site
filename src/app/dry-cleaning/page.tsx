@@ -108,29 +108,53 @@ export default function DryCleaningPage() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-            Everyday & Specialty Garments
+            Dry Cleaning Services in Smyrna, TN for Everyday & Specialty Garments
           </h2>
 
           <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
 
           <div className="mt-14 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
             {[
-              "Suits & Blazers",
-              "Dress Shirts & Blouses",
-              "Dresses & Formal Wear",
-              "Coats & Jackets",
-              "Pants & Slacks",
-              "Specialty Items",
+              {
+                name: "Suit Dry Cleaning in Smyrna",
+                note:
+                  "Professional suit dry cleaning in Smyrna, TN including blazers, business attire, and structured garments requiring fabric-specific care.",
+              },
+              {
+                name: "Shirt & Blouse Cleaning in Smyrna",
+                note:
+                  "Reliable dress shirt and blouse dry cleaning in Smyrna, TN with pressing and finishing for business and everyday wear.",
+              },
+              {
+                name: "Dress & Formal Wear Cleaning in Smyrna",
+                note:
+                  "Specialized dry cleaning for dresses, formal gowns, and event wear in Smyrna, TN with careful fabric handling.",
+              },
+              {
+                name: "Coat & Jacket Dry Cleaning in Smyrna",
+                note:
+                  "Professional coat and jacket cleaning in Smyrna, TN including seasonal outerwear and structured garments.",
+              },
+              {
+                name: "Pants & Slacks Cleaning in Smyrna",
+                note:
+                  "Precise dry cleaning for pants and slacks in Smyrna, TN to maintain structure, crease lines, and garment longevity.",
+              },
+              {
+                name: "Specialty Garment Cleaning in Smyrna",
+                note:
+                  "Careful cleaning for specialty garments in Smyrna, TN including delicate fabrics and unique materials.",
+              },
             ].map((item) => (
               <div
-                key={item}
+                key={item.name}
                 className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] p-6 md:p-8"
               >
                 <h3 className="text-white font-semibold text-lg">
-                  {item}
+                  {item.name}
                 </h3>
                 <p className="mt-3 text-white/60 text-sm leading-relaxed">
-                  Professional cleaning with attention to fabric type and care requirements.
+                  {item.note}
                 </p>
               </div>
             ))}
@@ -250,7 +274,7 @@ export default function DryCleaningPage() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-            Common Questions About Our Dry Cleaning Services
+            Common Questions About Dry Cleaning in Smyrna, TN
           </h2>
 
           <div className="mt-8 h-[2px] w-24 bg-[#d4af37]"></div>
@@ -363,6 +387,54 @@ export default function DryCleaningPage() {
       </section>
       </SectionReveal>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Dry Cleaning Services in Smyrna, TN",
+            provider: {
+              "@type": "LocalBusiness",
+              name: "Vila Cleaners & Alterations",
+              url: "https://vilacleanersalterations.com/dry-cleaning",
+            },
+            areaServed: [
+              {
+                "@type": "City",
+                name: "Smyrna",
+              },
+              {
+                "@type": "City",
+                name: "La Vergne",
+              },
+              {
+                "@type": "City",
+                name: "Murfreesboro",
+              },
+            ],
+            serviceType: [
+              "Suit Dry Cleaning",
+              "Shirt Cleaning",
+              "Formal Wear Cleaning",
+              "Coat Cleaning",
+              "Specialty Garment Cleaning",
+            ],
+            availableChannel: {
+              "@type": "ServiceChannel",
+              serviceLocation: {
+                "@type": "Place",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Smyrna",
+                  addressRegion: "TN",
+                  addressCountry: "US",
+                },
+              },
+            },
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(dryCleaningFaqSchema) }}

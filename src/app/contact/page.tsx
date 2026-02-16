@@ -18,11 +18,11 @@ export default function ContactPage() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
-              Visit or Contact Our Team
+              Contact Vila Cleaners & Alterations in Smyrna, TN
             </h1>
 
             <p className="mt-6 text-white/80 max-w-2xl mx-auto leading-relaxed">
-              We are proud to serve the Smyrna community with professional alterations and dry cleaning services. For fastest assistance, please call during business hours.
+              We proudly provide professional alterations and dry cleaning services in Smyrna, TN. Visit our location for in-person fittings, clothing alterations, suit tailoring, and dependable garment care. For fastest assistance, please call during business hours.
             </p>
           </div>
         </section>
@@ -72,6 +72,14 @@ export default function ContactPage() {
                   Mon–Fri: 8:00am – 6:00pm<br />
                   Sat: 9:00am – 5:00pm<br />
                   Sun: Closed
+                </p>
+              </div>
+              <div className="rounded-2xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 p-6 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+                <div className="text-sm uppercase tracking-wide text-[#d4af37] font-semibold">
+                  Service Area
+                </div>
+                <p className="mt-4 text-white/80 leading-relaxed">
+                  Serving Smyrna, La Vergne, and Murfreesboro residents with expert alterations, tailoring, and dry cleaning services.
                 </p>
               </div>
 
@@ -147,6 +155,31 @@ export default function ContactPage() {
         </section>
       </SectionReveal>
 
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Vila Cleaners & Alterations",
+          url: "https://vilacleanersalterations.com/contact",
+          telephone: "+1-615-462-5145",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "901 Rock Springs Rd #130",
+            addressLocality: "Smyrna",
+            addressRegion: "TN",
+            postalCode: "37167",
+            addressCountry: "US"
+          },
+          areaServed: [
+            { "@type": "City", "name": "Smyrna" },
+            { "@type": "City", "name": "La Vergne" },
+            { "@type": "City", "name": "Murfreesboro" }
+          ]
+        })
+      }}
+    />
     </main>
   );
 }

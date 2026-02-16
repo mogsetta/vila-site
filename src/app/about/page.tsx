@@ -3,6 +3,12 @@ import Link from "next/link";
 import SectionReveal from "../../components/SectionReveal";
 import Image from "next/image";
 
+export const metadata = {
+  title: "About Vila Cleaners & Alterations | Master Tailor in Smyrna TN",
+  description:
+    "Learn about Vila Cleaners & Alterations in Smyrna, TN. Over 30 years of master tailoring experience providing professional clothing alterations, suit tailoring, and garment care to the Smyrna community.",
+};
+
 export default function AboutPage() {
   return (
     <main className="relative">
@@ -19,14 +25,14 @@ export default function AboutPage() {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
-              A Master Tailor Serving Smyrna with 30+ Years of Craftsmanship
+              Master Tailor Providing Professional Alterations in Smyrna, TN for 30+ Years
             </h1>
             <div className="mt-6 flex justify-center">
               <div className="h-[2px] w-32 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
             </div>
 
             <p className="mt-8 text-white/80 text-lg max-w-3xl mx-auto leading-relaxed">
-              For over three decades, Keeow Phonxaya has dedicated her life to the craft of tailoring — serving the Smyrna community with precision, integrity, and personal care. Every garment is treated not just as clothing, but as something meaningful to the person who wears it.
+              For over three decades, Keeow Phonxaya has dedicated her life to professional clothing alterations and tailoring in Smyrna, TN — serving the local community with precision, integrity, and personal care. Every garment is treated not just as clothing, but as something meaningful to the person who wears it.
             </p>
 
             <div className="mt-10 relative h-[360px] md:h-[500px] w-full rounded-3xl overflow-hidden shadow-[0_30px_90px_rgba(0,0,0,0.45)]">
@@ -85,7 +91,7 @@ export default function AboutPage() {
               </div>
 
               <p>
-                Today, every garment entrusted to Vila is handled personally with care and attention to detail. Craftsmanship comes first, and every customer is treated with respect.
+                Today, every garment entrusted to Vila is handled personally with care and attention to detail. Craftsmanship comes first, and every customer is treated with respect. If you are searching for <Link href="/alterations" className="text-[#d4af37] underline underline-offset-4">professional alterations in Smyrna</Link>, our team is here to provide precise in-person fittings and expert garment adjustments.
               </p>
               <div className="mt-10 rounded-2xl bg-gradient-to-br from-[#123a30] via-[#0f2f25] to-[#071f19] border border-[#1f5f4d]/40 p-6 md:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
                 <p className="text-[#d4af37] text-lg font-medium italic leading-relaxed">
@@ -174,7 +180,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-xl font-semibold text-white">We Would Be Honored to Serve You</h3>
                 <p className="mt-2 text-white/70">
-                  Visit Vila Cleaners & Alterations in Smyrna for professional tailoring and garment care.
+                  Visit Vila Cleaners & Alterations in Smyrna, TN for professional clothing alterations, suit tailoring, and dependable garment care.
                 </p>
               </div>
               <Link href="/contact">

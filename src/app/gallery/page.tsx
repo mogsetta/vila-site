@@ -1,7 +1,11 @@
-"use client";
-
 // removed slider state (no longer needed)
 import SectionReveal from "../../components/SectionReveal";
+
+export const metadata = {
+  title: "Alterations Gallery | Wedding Dress & Suit Tailoring in Smyrna TN",
+  description:
+    "View real before and after clothing alterations in Smyrna, TN including wedding dress alterations, suit tailoring, and professional garment adjustments by Vila Cleaners & Alterations.",
+};
 
 export default function GalleryPage() {
   return (
@@ -23,7 +27,7 @@ export default function GalleryPage() {
             </h1>
 
             <p className="mt-6 text-white/80 max-w-2xl mx-auto leading-relaxed">
-              From detailed alterations to high-profile clients, every garment reflects precision, care, and decades of experience.
+              View real examples of clothing alterations in Smyrna, TN including wedding dress alterations, suit tailoring, and detailed garment adjustments performed by our master tailor.
             </p>
           </div>
         </section>
@@ -44,7 +48,7 @@ export default function GalleryPage() {
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_30px_90px_rgba(0,0,0,0.6)] bg-[#071f19]">
                 <img
                   src="/images/gallery/wedding-dress-alteration-before.jpg"
-                  alt="Wedding Dress Before Alterations"
+                  alt="Wedding dress before alterations in Smyrna TN"
                   className="w-full h-[320px] md:h-[500px] object-cover"
                 />
                 <div className="px-6 py-4 text-white/80 text-sm tracking-wide uppercase">
@@ -56,7 +60,7 @@ export default function GalleryPage() {
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_30px_90px_rgba(0,0,0,0.6)] bg-[#071f19]">
                 <img
                   src="/images/gallery/wedding-dress-alteration-after.jpg"
-                  alt="Wedding Dress After Alterations"
+                  alt="Wedding dress after alterations in Smyrna TN by Vila Cleaners"
                   className="w-full h-[320px] md:h-[500px] object-cover"
                 />
                 <div className="px-6 py-4 text-white/80 text-sm tracking-wide uppercase">
@@ -83,7 +87,7 @@ export default function GalleryPage() {
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
                 <img
                   src="/images/gallery/nfl-event.jpg"
-                  alt="Vila Cleaners with high-profile clients"
+                  alt="Vila Cleaners master tailor with clients in Smyrna TN"
                   className="w-full h-[260px] md:h-[350px] object-cover"
                 />
               </div>
@@ -92,7 +96,7 @@ export default function GalleryPage() {
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
                 <img
                   src="/images/gallery/nfl-client.jpg"
-                  alt="Vila Cleaners client photo"
+                  alt="Client of Vila Cleaners & Alterations in Smyrna TN"
                   className="w-full h-[260px] md:h-[350px] object-cover"
                 />
               </div>
@@ -101,7 +105,7 @@ export default function GalleryPage() {
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
                 <img
                   src="/images/gallery/celebrity-client.jpg"
-                  alt="Vila Cleaners craftsmanship and clients"
+                  alt="Clothing alterations craftsmanship in Smyrna TN"
                   className="w-full h-[260px] md:h-[350px] object-cover"
                 />
               </div>
@@ -110,7 +114,7 @@ export default function GalleryPage() {
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
                 <img
                   src="/images/gallery/client-4.jpg"
-                  alt="Vila Cleaners additional client photo"
+                  alt="Tailoring and alterations clients in Smyrna TN"
                   className="w-full h-[260px] md:h-[350px] object-cover"
                 />
               </div>
@@ -119,7 +123,7 @@ export default function GalleryPage() {
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
                 <img
                   src="/images/gallery/client-5.jpg"
-                  alt="Vila Cleaners additional client photo"
+                  alt="Tailoring and alterations clients in Smyrna TN"
                   className="w-full h-[260px] md:h-[350px] object-cover"
                 />
               </div>
@@ -128,7 +132,7 @@ export default function GalleryPage() {
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
                 <img
                   src="/images/gallery/client-6.jpg"
-                  alt="Vila Cleaners additional client photo"
+                  alt="Tailoring and alterations clients in Smyrna TN"
                   className="w-full h-[260px] md:h-[350px] object-cover"
                 />
               </div>
@@ -137,7 +141,7 @@ export default function GalleryPage() {
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
                 <img
                   src="/images/gallery/client-7.jpg"
-                  alt="Vila Cleaners additional client photo"
+                  alt="Tailoring and alterations clients in Smyrna TN"
                   className="w-full h-[260px] md:h-[350px] object-cover"
                 />
               </div>
@@ -146,7 +150,7 @@ export default function GalleryPage() {
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
                 <img
                   src="/images/gallery/client-8.jpg"
-                  alt="Vila Cleaners additional client photo"
+                  alt="Tailoring and alterations clients in Smyrna TN"
                   className="w-full h-[260px] md:h-[350px] object-cover"
                 />
               </div>
@@ -155,7 +159,7 @@ export default function GalleryPage() {
               <div className="rounded-3xl overflow-hidden border border-[#1f5f4d]/40 shadow-[0_25px_70px_rgba(0,0,0,0.5)] bg-[#071f19]">
                 <img
                   src="/images/gallery/client-9.jpg"
-                  alt="Vila Cleaners additional client photo"
+                  alt="Tailoring and alterations clients in Smyrna TN"
                   className="w-full h-[260px] md:h-[350px] object-cover"
                 />
               </div>

@@ -8,15 +8,15 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   metadataBase: new URL("https://vilacleanersalterations.com"),
   title: {
-    default: "Vila Cleaners & Alterations | Smyrna TN",
+    default: "Alterations & Dry Cleaning in Smyrna TN | Vila Cleaners & Alterations",
     template: "%s | Vila Cleaners & Alterations",
   },
   description:
-    "Professional alterations and dry cleaning services in Smyrna, Tennessee. Over 30 years of master tailoring experience specializing in bridal, formal wear, and garment care.",
+    "Professional tailoring, clothing alterations, suit adjustments, wedding dress alterations, and dry cleaning services in Smyrna TN. Vila Cleaners & Alterations offers expert garment care with over 30 years of experience.",
   openGraph: {
-    title: "Vila Cleaners & Alterations | Smyrna TN",
+    title: "Alterations & Dry Cleaning in Smyrna TN | Vila Cleaners & Alterations",
     description:
-      "Professional alterations and dry cleaning services in Smyrna, Tennessee. Over 30 years of master tailoring experience specializing in bridal, formal wear, and garment care.",
+      "Professional tailoring, clothing alterations, suit adjustments, wedding dress alterations, and dry cleaning services in Smyrna TN.",
     url: "https://vilacleanersalterations.com",
     siteName: "Vila Cleaners & Alterations",
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vila Cleaners & Alterations | Smyrna TN",
+    title: "Alterations & Dry Cleaning in Smyrna TN | Vila Cleaners & Alterations",
     description:
       "Professional alterations and dry cleaning services in Smyrna, Tennessee.",
     images: ["/og-image.jpg"],

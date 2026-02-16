@@ -1,11 +1,8 @@
-"use client";
-
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 import Link from "next/link";
+import Image from "next/image";
 import SectionReveal from "@/components/SectionReveal";
-
-import { useState } from "react";
 
 export default function HomePage() {
   return (
@@ -32,7 +29,7 @@ export default function HomePage() {
                     Master Tailor
                   </div>
                   <h1 className="text-xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-[-0.02em] text-white drop-shadow-[0_8px_30px_rgba(0,0,0,0.45)]">
-                    Expert Alterations & Tailoring in Smyrna, TN
+                    Professional Alterations & Dry Cleaning in Smyrna, TN
                   </h1>
 
                   <p className="mt-5 text-base sm:text-lg text-white/90 max-w-xl">
@@ -60,12 +57,15 @@ export default function HomePage() {
                 {/* RIGHT IMAGE WITH DEPTH */}
                 <div className="relative">
                 <div className="relative h-56 sm:h-80 md:h-[420px] overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
-                    <img
-                      src="/images/hero/hero-tailoring.jpg"
-                      alt="Professional tailoring in progress"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
+                  <Image
+                    src="/images/hero/hero-tailoring.jpg"
+                    alt="Professional clothing alterations and tailoring in Smyrna TN"
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
                 </div>
 
               </div>
@@ -245,7 +245,7 @@ export default function HomePage() {
               Specialized Services
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
-              Alterations Services
+              Alterations Services in Smyrna, TN
             </h2>
 
             <p className="mt-4 text-white/70 max-w-3xl">
@@ -255,12 +255,36 @@ export default function HomePage() {
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
               {[
-                { name: "Wedding & Prom Dress Alterations", note: "In-store fitting and inspection" },
-                { name: "Suit Tailoring", note: "Professional tailoring for a clean fit" },
-                { name: "Pants Hemming", note: "Common service — quick turnaround" },
-                { name: "Garment Resizing", note: "Complex items may vary" },
-                { name: "Zipper Repairs", note: "Repairs for pants, jeans, coats, and dresses" },
-                { name: "Custom Adjustments", note: "Unique garments handled with care" },
+                {
+                  name: "Wedding & Prom Dress Alterations in Smyrna",
+                  note:
+                    "Expert wedding dress and formal gown alterations in Smyrna, TN including hemming, bodice adjustments, and detailed custom fittings.",
+                },
+                {
+                  name: "Suit Tailoring in Smyrna",
+                  note:
+                    "Professional suit tailoring services in Smyrna, TN for jackets, sleeves, waist adjustments, and complete suit alterations.",
+                },
+                {
+                  name: "Pants Hemming Services in Smyrna",
+                  note:
+                    "Fast and precise pants hemming in Smyrna, TN for dress pants, jeans, uniforms, and everyday wear.",
+                },
+                {
+                  name: "Dress & Clothing Alterations in Smyrna",
+                  note:
+                    "Complete clothing alterations in Smyrna, TN including resizing, adjustments, and garment reshaping for a perfect fit.",
+                },
+                {
+                  name: "Zipper Repair in Smyrna",
+                  note:
+                    "Reliable zipper repair in Smyrna, TN for pants, jackets, coats, dresses, and specialty garments.",
+                },
+                {
+                  name: "Clothing Repair Services in Smyrna",
+                  note:
+                    "Professional clothing repair in Smyrna, TN including seam repairs, patching, and structural garment fixes.",
+                },
               ].map((service) => (
                 <div
                   key={service.name}
@@ -316,13 +340,15 @@ export default function HomePage() {
 
               <div className="relative">
                 <div className="absolute -top-6 -left-6 w-full h-full border border-white/10"></div>
-                <div className="relative h-72 md:h-96 overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
-                  <img
-                    src="/images/hero/family-owned.jpg"
-                    alt="Family-owned tailoring business"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
+              <div className="relative h-72 md:h-96 overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+                <Image
+                  src="/images/hero/family-owned.jpg"
+                  alt="Family-owned tailoring and alterations business in Smyrna TN"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
               </div>
 
             </div>
@@ -336,10 +362,10 @@ export default function HomePage() {
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Professional Garment Care
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-tight text-white">Professional Dry Cleaning Services</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-tight text-white">Professional Dry Cleaning Services in Smyrna, TN</h2>
 
             <p className="mt-4 text-white/80 max-w-3xl leading-relaxed">
-              Our professional dry cleaning services in Smyrna, TN are designed to preserve fabric quality, restore structure, and extend the life of your garments. From everyday business wear to specialty pieces, each item is handled with precision care.
+              In addition to expert clothing alterations in Smyrna, TN, we provide dependable dry cleaning services to preserve fabric quality, restore structure, and extend the life of your garments. From business wear to specialty pieces, each item is professionally cleaned with precision care.
             </p>
 
             <div className="mt-14 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
@@ -397,10 +423,12 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute -bottom-6 -right-6 w-full h-full border border-[#d4af37]/30 rounded-3xl"></div>
                 <div className="relative h-80 md:h-[420px] overflow-hidden rounded-3xl shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
-                  <img
+                  <Image
                     src="/images/hero/sewing-action.jpg"
-                    alt="Master tailor working at sewing machine"
-                    className="h-full w-full object-cover"
+                    alt="Master tailor performing clothing alterations in Smyrna TN"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
                   />
                 </div>
               </div>
@@ -468,67 +496,44 @@ export default function HomePage() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
               Common Questions About Alterations & Dry Cleaning
             </h2>
-
-            {(() => {
-              const [active, setActive] = useState<number | null>(null);
-
-              const faqs = [
+            <div className="mt-12 space-y-6 max-w-3xl">
+              {[
                 {
-                  q: "How long do alterations take?",
-                  a: "Turnaround times vary depending on the garment and level of adjustment needed. Most standard alterations are completed within a few days. Please visit us in-store for accurate timing.",
+                  q: "How long do alterations take in Smyrna, TN?",
+                  a: "Turnaround times for alterations in Smyrna, TN vary depending on the garment and level of adjustment needed. Most standard clothing alterations such as pants hemming or suit adjustments are completed within a few days. Visit our Smyrna location for accurate timing.",
                 },
                 {
-                  q: "Do I need an appointment?",
-                  a: "Walk-ins are welcome. For bridal or complex formal wear, we recommend visiting earlier to allow adequate time for fittings and adjustments.",
+                  q: "Do I need an appointment for alterations in Smyrna?",
+                  a: "Walk-ins are welcome at our Smyrna, TN alterations shop. For bridal alterations, wedding dresses, or complex formal wear, we recommend visiting earlier to allow adequate time for fittings and detailed tailoring.",
                 },
                 {
-                  q: "Do you alter wedding dresses?",
-                  a: "Yes. We specialize in wedding dress alterations, including hemming, bodice adjustments, sleeve modifications, and detailed custom fitting.",
+                  q: "Do you offer wedding dress alterations in Smyrna?",
+                  a: "Yes. We specialize in wedding dress alterations in Smyrna, TN including hemming, bodice adjustments, sleeve modifications, and detailed custom fitting to ensure the perfect bridal fit.",
                 },
                 {
-                  q: "What items can be dry cleaned?",
-                  a: "We professionally clean suits, dresses, coats, formal wear, and specialty garments. Visit our location for specific pricing and garment inspection.",
+                  q: "What items can be dry cleaned in Smyrna, TN?",
+                  a: "We provide professional dry cleaning services in Smyrna, TN for suits, dresses, coats, formal wear, and specialty garments. Bring your items to our location for garment inspection and pricing.",
                 },
-              ];
-
-              return (
-                <div className="mt-12 space-y-6 max-w-3xl">
-                  {faqs.map((item, idx) => {
-                    const isOpen = active === idx;
-                    return (
-                      <div
-                        key={idx}
-                        className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] overflow-hidden transition-all duration-300"
-                      >
-                        <button
-                          onClick={() => setActive(isOpen ? null : idx)}
-                          className="w-full text-left px-6 py-5 flex items-center justify-between text-lg font-semibold text-white"
-                        >
-                          {item.q}
-                          <span
-                            className={`ml-4 text-[#d4af37] transition-transform duration-300 ${
-                              isOpen ? "rotate-180" : "rotate-0"
-                            }`}
-                          >
-                            ▾
-                          </span>
-                        </button>
-
-                        <div
-                          className={`px-6 transition-all duration-500 ease-in-out overflow-hidden ${
-                            isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"
-                          }`}
-                        >
-                          <p className="text-white/70 leading-relaxed">
-                            {item.a}
-                          </p>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              );
-            })()}
+                {
+                  q: "Do you provide zipper repair and clothing repair in Smyrna?",
+                  a: "Yes. We offer zipper repair, seam repair, and professional clothing repair services in Smyrna, TN for pants, jackets, dresses, and everyday garments.",
+                },
+              ].map((item, idx) => (
+                <details
+                  key={idx}
+                  className="rounded-2xl border border-white/10 bg-white/5 shadow-[0_20px_60px_rgba(0,0,0,0.35)] overflow-hidden"
+                >
+                  <summary className="cursor-pointer px-6 py-5 text-lg font-semibold text-white list-none">
+                    {item.q}
+                  </summary>
+                  <div className="px-6 pb-6">
+                    <p className="text-white/70 leading-relaxed">
+                      {item.a}
+                    </p>
+                  </div>
+                </details>
+              ))}
+            </div>
           </section>
         </SectionReveal>
 
@@ -604,6 +609,68 @@ export default function HomePage() {
           </section>
         </SectionReveal>
     
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": ["LocalBusiness", "DryCleaningOrLaundry"],
+            "name": "Vila Cleaners & Alterations",
+            "image": "https://vilacleanersalterations.com/images/hero/hero-tailoring.jpg",
+            "url": "https://vilacleanersalterations.com",
+            "telephone": "+1-615-462-5145",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "901 Rock Springs Rd #130",
+              "addressLocality": "Smyrna",
+              "addressRegion": "TN",
+              "postalCode": "37167",
+              "addressCountry": "US"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Smyrna" },
+              { "@type": "City", "name": "La Vergne" },
+              { "@type": "City", "name": "Murfreesboro" }
+            ],
+            "description": "Professional clothing alterations, suit tailoring, wedding dress alterations, and dry cleaning services in Smyrna, TN.",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Garment Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Clothing Alterations in Smyrna, TN"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Wedding Dress Alterations in Smyrna, TN"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Suit Tailoring in Smyrna, TN"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Dry Cleaning Services in Smyrna, TN"
+                  }
+                }
+              ]
+            },
+            "sameAs": []
+          })
+        }}
+      />
     </main>
   );
 }
