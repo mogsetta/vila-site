@@ -2,7 +2,7 @@ export default function SiteFooter() {
   return (
     <footer className="mt-40 relative bg-gradient-to-b from-[#0a221c] to-[#061410] border-t border-[#d4af37]/50 shadow-[0_-30px_80px_rgba(0,0,0,0.45)]">
       <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
-      <div className="max-w-7xl mx-auto px-6 md:px-10 py-20">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 py-20">
         
         <div className="grid gap-14 md:grid-cols-4">
 

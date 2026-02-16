@@ -15,7 +15,7 @@ export const metadata = {
     title: "Wedding Dress & Suit Alterations in Smyrna TN | Vila Cleaners",
     description:
       "Expert bridal gown alterations, suit tailoring, hemming, and formal wear adjustments in Smyrna, Tennessee. 30+ years of master tailoring experience.",
-    url: "https://vilacleaners.com/alterations",
+    url: "https://vilacleanersalterations.com/alterations",
     siteName: "Vila Cleaners & Alterations",
     locale: "en_US",
     type: "website",
@@ -36,7 +36,7 @@ export default function AlterationsPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "Vila Cleaners & Alterations",
-            image: "https://vilacleaners.com/images/alterations.jpg",
+            image: "https://vilacleanersalterations.com/images/alterations/gold-formal-dress.jpg",
             address: {
               "@type": "PostalAddress",
               addressLocality: "Smyrna",
@@ -67,7 +67,7 @@ export default function AlterationsPage() {
         {/* Bottom Fade */}
         <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#111315]"></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-32">
+        <div className="relative max-w-6xl mx-auto px-6 md:px-10 lg:px-16 py-20 md:py-32">
 
           {/* Editorial Text Block */}
           <div className="max-w-3xl">
@@ -102,7 +102,7 @@ export default function AlterationsPage() {
       <SectionReveal>
       {/* SERVICES */}
       <section className="mt-20 md:mt-32">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Our Services
           </div>
@@ -142,7 +142,7 @@ export default function AlterationsPage() {
       <SectionReveal>
       {/* BRIDAL ALTERATIONS SECTION */}
       <section className="mt-20 md:mt-32">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 grid md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16 grid md:grid-cols-2 gap-16 items-center">
 
           <div>
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">

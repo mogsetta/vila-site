@@ -76,7 +76,7 @@ export default function HomePage() {
 
         {/* HOW IT WORKS */}
         <SectionReveal>
-          <section className="mt-10 sm:mt-20 md:mt-24 py-8 sm:py-16 md:py-20">
+          <section className="mt-20 md:mt-32 py-8 sm:py-16 md:py-20">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
               What to Expect
             </h2>
@@ -115,7 +115,7 @@ export default function HomePage() {
 
         {/* GOOGLE REVIEWS */}
         <SectionReveal>
-          <section className="mt-14 sm:mt-18 md:mt-28 mx-6 md:mx-10 rounded-[40px] overflow-hidden bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-10 sm:py-16 md:py-24 px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.35)]">
+          <section className="mt-20 md:mt-32 mx-6 md:mx-10 rounded-[40px] overflow-hidden bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-10 sm:py-16 md:py-24 px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.35)]">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight">
               What Our Customers Say
             </h2>
@@ -173,7 +173,7 @@ export default function HomePage() {
 
         {/* AUTHORITY SECTION */}
         <SectionReveal>
-          <section className="mt-10 sm:mt-20 md:mt-36 py-8 sm:py-16 md:py-28">
+          <section className="mt-20 md:mt-32 py-8 sm:py-16 md:py-28">
             <div className="grid gap-16 md:grid-cols-2 items-start">
 
               <div>
@@ -240,7 +240,7 @@ export default function HomePage() {
 
         {/* ALTERATIONS SERVICES */}
         <SectionReveal>
-          <section className="mt-14 sm:mt-18 md:mt-28 py-10 sm:py-16 md:py-24">
+          <section className="mt-20 md:mt-32 py-10 sm:py-16 md:py-24">
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Specialized Services
             </div>
@@ -282,7 +282,7 @@ export default function HomePage() {
 
         {/* ABOUT US BRIDGE */}
         <SectionReveal>
-          <section className="mt-12 sm:mt-20 md:mt-36 relative">
+          <section className="mt-20 md:mt-32 relative">
 
             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#d4af37] via-transparent to-transparent"></div>
 
@@ -361,7 +361,7 @@ export default function HomePage() {
 
         {/* CRAFT IN ACTION */}
         <SectionReveal>
-          <section className="mt-14 sm:mt-32 md:mt-40 relative mx-6 md:mx-10 overflow-hidden rounded-[50px] bg-gradient-to-br from-[#0e2a22] via-[#123b2f] to-[#0a211b] py-16 md:py-28 px-6 md:px-20 shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
+          <section className="mt-20 md:mt-32 relative mx-6 md:mx-10 overflow-hidden rounded-[50px] bg-gradient-to-br from-[#0e2a22] via-[#123b2f] to-[#0a211b] py-16 md:py-28 px-6 md:px-20 shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
 
             {/* Subtle gold accent bar */}
             <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
@@ -411,9 +411,9 @@ export default function HomePage() {
 
         {/* IMPORTANT PRICING NOTES */}
         <SectionReveal>
-          <section className="mt-14 sm:mt-18 md:mt-28 py-10 sm:py-16 md:py-24 relative">
+          <section className="mt-20 md:mt-32 py-10 sm:py-16 md:py-24 relative">
 
-            <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+            <Container>
 
               <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
                 Service Information
@@ -454,13 +454,13 @@ export default function HomePage() {
                 Wedding and formal wear typically require an in-person fitting. Payment is required in-store before alteration or cleaning work begins.
               </div>
 
-            </div>
+            </Container>
           </section>
         </SectionReveal>
 
         {/* FAQ SECTION */}
         <SectionReveal>
-          <section className="mt-10 sm:mt-20 md:mt-24 py-8 sm:py-16 md:py-20">
+          <section className="mt-20 md:mt-32 py-8 sm:py-16 md:py-20">
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Frequently Asked Questions
             </div>
@@ -534,7 +534,7 @@ export default function HomePage() {
 
         {/* LOCATION & HOURS */}
         <SectionReveal>
-          <section className="mt-14 sm:mt-18 md:mt-28 py-10 sm:py-16 md:py-24">
+          <section className="mt-20 md:mt-32 py-10 sm:py-16 md:py-24">
             <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
               Location & Hours
             </div>
@@ -574,7 +574,7 @@ export default function HomePage() {
 
         {/* FINAL CTA */}
         <SectionReveal>
-          <section className="mt-12 sm:mt-20 md:mt-32 mb-16 sm:mb-20 mx-4 sm:mx-6 md:mx-10 overflow-hidden rounded-[40px] bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-10 sm:py-16 md:py-24 px-6 sm:px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.45)] relative">
+          <section className="mt-20 md:mt-32 mb-20 md:mb-32 mx-4 sm:mx-6 md:mx-10 overflow-hidden rounded-[40px] bg-gradient-to-br from-[#0f2f26] via-[#123b2f] to-[#0c241e] py-10 sm:py-16 md:py-24 px-6 sm:px-8 md:px-16 shadow-[0_40px_120px_rgba(0,0,0,0.45)] relative">
 
             {/* Subtle gold accent line */}
             <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>

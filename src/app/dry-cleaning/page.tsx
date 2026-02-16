@@ -47,7 +47,7 @@ export const metadata = {
     title: "Professional Dry Cleaning in Smyrna TN | Vila Cleaners",
     description:
       "Reliable dry cleaning for business wear, formal garments, and everyday clothing in Smyrna, Tennessee.",
-    url: "https://vilacleaners.com/dry-cleaning",
+    url: "https://vilacleanersalterations.com/dry-cleaning",
     siteName: "Vila Cleaners & Alterations",
     locale: "en_US",
     type: "website",
@@ -102,7 +102,7 @@ export default function DryCleaningPage() {
       <SectionReveal>
       <section className="mt-20 md:mt-32 relative">
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
-        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             What We Clean
           </div>
@@ -294,7 +294,7 @@ export default function DryCleaningPage() {
       <SectionReveal>
       <section className="mt-20 md:mt-32 relative">
         <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-16 h-[2px] bg-[#d4af37] opacity-40"></div>
-        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
           <div className="text-xs tracking-[0.25em] uppercase text-[#d4af37] font-semibold mb-4">
             Work In Action
           </div>

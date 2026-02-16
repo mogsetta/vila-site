@@ -1,12 +1,22 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, []);
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-gradient-to-b from-[#0f3a2f] to-[#0a221c]">
@@ -100,6 +110,9 @@ export default function SiteHeader() {
           </a>
           <button
             onClick={() => setOpen(!open)}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            aria-label="Toggle navigation menu"
             className="md:hidden rounded-lg border px-3 py-2 text-sm"
           >
             Menu
@@ -108,7 +121,11 @@ export default function SiteHeader() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-white/10 bg-[#0a221c]">
+        <div
+          id="mobile-menu"
+          role="navigation"
+          className="md:hidden border-t border-white/10 bg-[#0a221c]"
+        >
           <nav className="flex flex-col px-6 py-4 gap-4 text-sm text-[#d4af37]/90">
             <Link onClick={() => setOpen(false)} href="/alterations">Alterations</Link>
             <Link onClick={() => setOpen(false)} href="/dry-cleaning">Dry Cleaning</Link>
