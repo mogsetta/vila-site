@@ -267,9 +267,11 @@ export default function HomePage() {
                 <p className="mt-6 text-white/70 leading-relaxed">
                   For more than three decades, Vila Cleaners & Alterations has provided
                   professional alterations and garment care to the Smyrna, Tennessee
-                  community. With years of hands-on experience as a master tailor,
-                  Keeow Phonxaya has built a reputation for precision workmanship,
-                  careful attention to detail, and dependable service.
+                  community and surrounding Rutherford County area. With years of hands-on
+                  experience as a master tailor, Keeow Phonxaya has built a reputation for
+                  precision workmanship, careful attention to detail, and dependable service.
+                  Clients from La Vergne, Murfreesboro, and throughout Rutherford County
+                  trust our shop for expert tailoring and professional garment care.
                 </p>
 
                 <p className="mt-4 text-white/70 leading-relaxed">
@@ -628,6 +630,9 @@ export default function HomePage() {
                 <p><strong>Phone:</strong><br />(615) 462-5145</p>
                 <p><strong>Hours:</strong><br />Mon–Fri: 8:00am – 6:00pm<br />Sat: 9:00am – 5:00pm<br />Sun: Closed</p>
               </div>
+              <p className="mt-6 text-white/60 text-sm leading-relaxed">
+                Conveniently located in Smyrna, Vila Cleaners &amp; Alterations proudly serves clients throughout La Vergne, Murfreesboro, and the greater Rutherford County area for professional clothing alterations, tailoring, and dry cleaning services.
+              </p>
 
               <div>
                 <div className="h-72 md:h-80 rounded-2xl bg-white shadow-[0_20px_60px_rgba(0,0,0,0.08)] overflow-hidden">
@@ -707,7 +712,8 @@ export default function HomePage() {
             "areaServed": [
               { "@type": "City", "name": "Smyrna" },
               { "@type": "City", "name": "La Vergne" },
-              { "@type": "City", "name": "Murfreesboro" }
+              { "@type": "City", "name": "Murfreesboro" },
+              { "@type": "AdministrativeArea", "name": "Rutherford County", "addressRegion": "TN", "addressCountry": "US" }
             ],
             "description": "Professional clothing alterations, suit tailoring, wedding dress alterations, and dry cleaning services in Smyrna, TN.",
             "hasOfferCatalog": {

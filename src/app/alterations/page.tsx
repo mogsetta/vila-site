@@ -97,7 +97,7 @@ export default function AlterationsPage() {
             </div>
 
             <p className="mt-8 text-white/80 text-lg leading-relaxed max-w-2xl">
-              Precision bridal alterations, suit tailoring, formal wear adjustments, and garment resizing performed with over 30 years of professional tailoring experience.
+              Precision bridal alterations, suit tailoring, formal wear adjustments, and garment resizing performed with over 30 years of professional tailoring experience. Serving Smyrna, La Vergne, Murfreesboro, and clients throughout Rutherford County, Tennessee.
             </p>
 
             <div className="mt-10">
@@ -128,7 +128,7 @@ export default function AlterationsPage() {
 
           <div className="mt-8 max-w-3xl text-white/70 leading-relaxed">
             <p>
-              If you’re searching for professional alterations in Smyrna TN, our experienced tailoring team provides precise in-person fittings and garment adjustments for wedding dresses, suits, pants, and everyday clothing. We focus on structure, balance, and long-lasting results for every client in Smyrna and surrounding areas.
+              If you’re searching for professional alterations in Smyrna TN, our experienced tailoring team provides precise in-person fittings and garment adjustments for wedding dresses, suits, pants, uniforms, and everyday clothing. We focus on structure, balance, and long-lasting results for every client in Smyrna, La Vergne, Murfreesboro, and the greater Rutherford County area.
             </p>
           </div>
 
@@ -290,7 +290,7 @@ export default function AlterationsPage() {
             </p>
 
             <p>
-              From wedding dress alterations and formal wear tailoring to everyday pant hemming and suit adjustments, each garment is evaluated in person to ensure proper fit and long-lasting results. Our shop is family-owned and operated, delivering dependable craftsmanship and clear communication on every service.
+              From wedding dress alterations and formal wear tailoring to everyday pant hemming and suit adjustments, each garment is evaluated in person to ensure proper fit and long-lasting results. As a family-owned alteration shop serving Rutherford County for over 30 years, we deliver dependable craftsmanship and clear communication on every service.
             </p>
 
             <p>
@@ -435,7 +435,7 @@ export default function AlterationsPage() {
               </p>
             </div>
             <a href="tel:+16154625145">
-              <Button>Call Now</Button>
+              <Button>Call for Alterations Today</Button>
             </a>
           </div>
         </div>
