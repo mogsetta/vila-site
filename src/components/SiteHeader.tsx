@@ -113,7 +113,7 @@ export default function SiteHeader() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label="Toggle navigation menu"
-            className="md:hidden rounded-lg border px-3 py-2 text-sm"
+            className="md:hidden rounded-lg border border-[#d4af37]/70 bg-gradient-to-r from-[#e6c25a] via-[#d4af37] to-[#b8902f] px-3 py-2 text-sm font-semibold text-[#0a221c] shadow-[0_0_0_1px_rgba(212,175,55,0.25),0_8px_25px_rgba(212,175,55,0.25)] transition-all duration-200 hover:brightness-110 hover:shadow-[0_0_0_1px_rgba(212,175,55,0.35),0_12px_35px_rgba(212,175,55,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37]/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a221c]"
           >
             Menu
           </button>
