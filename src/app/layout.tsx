@@ -68,7 +68,7 @@ const localBusinessSchema = {
         "Thursday",
         "Friday"
       ],
-      opens: "08:00",
+      opens: "08:30",
       closes: "18:00"
     },
     {

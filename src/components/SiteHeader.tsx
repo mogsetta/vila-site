@@ -18,6 +18,15 @@ export default function SiteHeader() {
     return () => window.removeEventListener("keydown", handleKey);
   }, []);
 
+  const handlePhoneClick = (label: string) => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "phone_click", {
+        event_category: "engagement",
+        event_label: label,
+      });
+    }
+  };
+
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-gradient-to-b from-[#0f3a2f] to-[#0a221c]">
       <div className="mx-auto max-w-6xl px-6 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-6">
@@ -98,12 +107,14 @@ export default function SiteHeader() {
         <div className="flex items-center gap-4 shrink-0 ml-auto">
           <a
             href="tel:+16154625145"
+            onClick={() => handlePhoneClick("header_phone_number")}
             className="hidden md:inline-flex text-sm font-medium whitespace-nowrap text-[#d4af37]/80 hover:text-[#d4af37]"
           >
             (615) 462-5145
           </a>
           <a
             href="tel:+16154625145"
+            onClick={() => handlePhoneClick("header_call_button")}
             className="hidden md:inline-flex items-center rounded-lg border border-[#d4af37]/40 px-3 py-2 text-sm font-semibold text-[#d4af37] bg-transparent hover:bg-[#d4af37]/10 transition-colors duration-200"
           >
             Call Now
@@ -135,6 +146,7 @@ export default function SiteHeader() {
             <Link onClick={() => setOpen(false)} href="/contact">Contact</Link>
             <a
               href="tel:+16154625145"
+              onClick={() => handlePhoneClick("mobile_call_link")}
               className="pt-2 font-semibold text-[#d4af37]"
             >
               Call (615) 462-5145
