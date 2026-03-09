@@ -1,7 +1,25 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [
+      {
+        source: "/tailoring-sewing-services-rutherford-county",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/dry-cleaning-laundry-services-williamson-county",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/contact-us",
+        destination: "/contact",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

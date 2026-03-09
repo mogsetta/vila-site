@@ -85,3 +85,13 @@ body::before {
   scrollbar-width: thin;
   scrollbar-color: #0f3a2f #0f1012;
 }
+.input {
+  background: #0F1115;
+  border: 1px solid #2A2F3A;
+  padding: 12px;
+  border-radius: 8px;
+  color: #F3F4F6;
+}
+.input::placeholder {
+  color: #6B7280;
+}
