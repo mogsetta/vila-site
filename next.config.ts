@@ -5,12 +5,12 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/tailoring-sewing-services-rutherford-county",
-        destination: "/services",
+        destination: "/Alterations",
         permanent: true,
       },
       {
         source: "/dry-cleaning-laundry-services-williamson-county",
-        destination: "/services",
+        destination: "/dry-cleaning",
         permanent: true,
       },
       {
